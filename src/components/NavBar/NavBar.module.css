@@ -4,19 +4,6 @@
   flex-direction: row;
 }
 
-.logoContainer {
-  display: flex;
-  width: 14rem;
-  height: 4rem;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logoImage {
-  width: 4rem;
-  height: 4rem;
-}
-
 .containerLinks {
   width: 38rem;
   display: flex;

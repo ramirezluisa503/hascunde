@@ -1,17 +1,10 @@
-import hascundeLogo from '../../assets/images/hascunde-logo.webp';
 import styles from './NavBar.module.css';
+import { Logo } from '../Logo/Logo';
 
 export const NavBar = () => {
   return (
     <article className={styles.container}>
-      <section className={styles.logoContainer}>
-        <img
-          className={styles.logoImage}
-          src={hascundeLogo}
-          alt="hascunde-logo"
-        />
-        <h1>Hascunde</h1>
-      </section>
+      <Logo />
 
       <section className={styles.containerLinks}>
         <p className={styles.textNavSel}>Homepage</p>

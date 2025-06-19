@@ -1,0 +1,12 @@
+.logoContainer {
+  display: flex;
+  width: 11rem;
+  height: 3.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoImage {
+  width: 3.5rem;
+  height: 3.5rem;
+}
