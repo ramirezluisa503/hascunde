@@ -1,16 +1,18 @@
-import { NavBar } from './NavBar/NavBar';
-import { Footer } from './Footer/Footer';
-import styles from './App.module.css';
+import { Route, Routes } from 'react-router-dom';
+import { AboutUs } from './Pages/AboutUs/AboutUs';
 import { HomePage } from './Pages/HomePage/HomePage';
+import { ContactUs } from './Pages/ContactUs/ContactUs';
+import { OurMission } from './Pages/OurMission/OurMission';
+import { CoreValues } from './Pages/CoreValues/CoreValues';
 
 export const App = () => {
   return (
-    <div className={styles.principal}>
-      <NavBar />
-      <main>
-        <HomePage />
-      </main>
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/AboutUs" element={<AboutUs />} />
+      <Route path="/OurMission" element={<OurMission />} />
+      <Route path="/CoreValues" element={<CoreValues />} />
+      <Route path="/ContactUs" element={<ContactUs />} />
+    </Routes>
   );
 };
