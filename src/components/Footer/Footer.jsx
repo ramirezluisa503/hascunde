@@ -24,7 +24,7 @@ export const Footer = () => {
       </section>
 
       <section className={styles.footerBottom}>
-        <p className={styles.languageSelector}>English</p>
+        <button className={styles.languageSelector}>English</button>
         <p className={styles.copyright}>© 2024 Hascunde.</p>
         <div className={styles.socialMedia}>
           <a href="#" aria-label="twitter">
