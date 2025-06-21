@@ -5,9 +5,6 @@ export const HomePage = () => {
   return (
     <article>
       <section className={styles.frontPage}></section>
-
-
-
       {/*Seccion Nuestro proposito de transformacion */}
       <section className={styles.columText}>
         <div className={styles.colum1}>
@@ -73,17 +70,6 @@ export const HomePage = () => {
         </div>
 
       </section>
-
-
-
-
-
-
-
-
-
-
-
     </article>
   );
 };
