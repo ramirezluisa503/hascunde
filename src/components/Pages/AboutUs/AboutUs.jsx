@@ -1,26 +1,22 @@
-import { Layout } from "../../Layout/Layout";
-import TeamMembers from "../../TeamMembers/TeamMembers";
-import { Row, Col, Container, Button, Card } from "react-bootstrap";
-import Portada from "../../../assets/images/PortadaAboutUs1.webp";
-import Campesinos from "../../../assets/images/Campesinos1.webp";
-import Autoconfianza from "../../../assets/images/Autoconfianza1.webp";
-
-
+import { Layout } from '../../Layout/Layout';
+import TeamMembers from '../../TeamMembers/TeamMembers';
+import { Row, Col, Container, Button, Card } from 'react-bootstrap';
+// import Portada from '../../../assets/images/PortadaAboutUs1.webp';
+import Campesinos from '../../../assets/images/Campesinos1.webp';
+import Autoconfianza from '../../../assets/images/Autoconfianza1.webp';
 
 export const AboutUs = () => {
   return (
     <Layout>
       <article>
         <Container>
-        <Row>
-          <Col>
-            <img src={Portada} alt="Portada About Us" className="img-fluid" />
-          </Col>
-        </Row>
+          <Row>
+            <Col>
+              {/* <img src={Portada} alt="Portada About Us" className="img-fluid" /> */}
+            </Col>
+          </Row>
         </Container>
 
-
-        
         <Container>
           <Row>
             <Col xs={12} md={6}>
@@ -44,7 +40,7 @@ export const AboutUs = () => {
                 y abrazar la auténtica libertad. Se trata de cultivar la
                 disciplina, la consciencia y la resiliencia necesarias para
                 afrontar las complejidades de la vida con gracia y propósito, lo
-                que nos lleva a una existencia equilibrada y plena.{" "}
+                que nos lleva a una existencia equilibrada y plena.{' '}
               </p>
               <Button variant="success">Explore Our Core Values</Button>
             </Col>
@@ -85,9 +81,13 @@ export const AboutUs = () => {
               <Col xs={12} md={8}>
                 <Card>
                   <Card.Body>
-                    <Card.Title>Evaluación de Fortalezas CliftonStrenght</Card.Title>
+                    <Card.Title>
+                      Evaluación de Fortalezas CliftonStrenght
+                    </Card.Title>
                     <Card.Text>
-                      Tus informes y guías personalizados de CliftonStrengths te brindarán un momento revelador a medida que experimentas nuevas formas de comprender lo que te hace tan único.
+                      Tus informes y guías personalizados de CliftonStrengths te
+                      brindarán un momento revelador a medida que experimentas
+                      nuevas formas de comprender lo que te hace tan único.
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -95,7 +95,11 @@ export const AboutUs = () => {
                   <Card.Body>
                     <Card.Title>Poder Físico</Card.Title>
                     <Card.Text>
-                      Libertad de movimiento para disfrutar de la vida plenamente, conectando la mente con el cuerpo, aprendiéndolo a dominar en aspectos como fuerza, movilidad,  flexibilidad, estabilidad, potencia, velocidad y resistencia.
+                      Libertad de movimiento para disfrutar de la vida
+                      plenamente, conectando la mente con el cuerpo,
+                      aprendiéndolo a dominar en aspectos como fuerza,
+                      movilidad, flexibilidad, estabilidad, potencia, velocidad
+                      y resistencia.
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -107,7 +111,10 @@ export const AboutUs = () => {
                   <Card.Body>
                     <Card.Title>Gestor de conocimiento</Card.Title>
                     <Card.Text>
-                      Cómo organizar nuestras ideas, pensamiento y notas? Entrarás a un nuevo concepto de Cerebro Digital, para que puedas capturar, procesar, aprender y compartir información, para que lo conviertas en tu legado
+                      Cómo organizar nuestras ideas, pensamiento y notas?
+                      Entrarás a un nuevo concepto de Cerebro Digital, para que
+                      puedas capturar, procesar, aprender y compartir
+                      información, para que lo conviertas en tu legado
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -115,7 +122,10 @@ export const AboutUs = () => {
                   <Card.Body>
                     <Card.Title>Cosmovisión y Espiritualidad</Card.Title>
                     <Card.Text>
-                      Compartiremos las distintas cosmovisiones y te mostraremos algunas de las  guías y pensamientos de grandes hombres de la historia, que te ayudaran a transitar el camino del autoconocimiento e individuación necesario para crecer.
+                      Compartiremos las distintas cosmovisiones y te mostraremos
+                      algunas de las guías y pensamientos de grandes hombres de
+                      la historia, que te ayudaran a transitar el camino del
+                      autoconocimiento e individuación necesario para crecer.
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -134,25 +144,17 @@ export const AboutUs = () => {
         <Container>
           <Row>
             <Col xs={12} md={12}>
-            <h3>Quieres dejar un Legado?</h3>
-            <p>Hascunde es más que un programa; es un compromiso de por vida con el crecimiento.<br/> Únete a una hermandad de hombres que forjan caminos más sólidos.</p>
-            <Button variant="success">Connect With Us Today</Button>
+              <h3>Quieres dejar un Legado?</h3>
+              <p>
+                Hascunde es más que un programa; es un compromiso de por vida
+                con el crecimiento.
+                <br /> Únete a una hermandad de hombres que forjan caminos más
+                sólidos.
+              </p>
+              <Button variant="success">Connect With Us Today</Button>
             </Col>
-
-
           </Row>
-
-
         </Container>
-       
-
-        
-
-
-
-
-
-
       </article>
     </Layout>
   );

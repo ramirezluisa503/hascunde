@@ -1,9 +1,9 @@
-import { Layout } from "../../Layout/Layout";
-import { Row, Col, Container, Card, Button, Image } from "react-bootstrap";
-import { BsCalendarCheck, BsBuilding, BsStars, BsGlobe2 } from "react-icons/bs";
-import FormulaExo from "../../../assets/images/LaFormulaExo.webp";
-import Chris from "../../../assets/images/Chris.webp";
-import David from "../../../assets/images/David.webp";
+import { Layout } from '../../Layout/Layout';
+import { Row, Col, Container, Card, Button, Image } from 'react-bootstrap';
+import { BsCalendarCheck, BsBuilding, BsStars, BsGlobe2 } from 'react-icons/bs';
+import FormulaExo from '../../../assets/images/LaFormulaExo.webp';
+import Chris from '../../../assets/images/Chris.webp';
+import David from '../../../assets/images/David.webp';
 
 export const OurMission = () => {
   return (
@@ -45,9 +45,9 @@ export const OurMission = () => {
                   <Card className="h-100 text-center p-3">
                     <div
                       className="mb-3"
-                      style={{ fontSize: "3rem", color: "#007bff" }}
+                      style={{ fontSize: '3rem', color: '#007bff' }}
                     >
-                      {" "}
+                      {' '}
                       {/* Estilo para el ícono. Puedes reemplazar el emoji con un SVG importado o un ícono de librería. */}
                       ⏱️ {/* Placeholder de ícono */}
                     </div>
@@ -65,7 +65,7 @@ export const OurMission = () => {
                   <Card className="h-100 text-center p-3">
                     <div
                       className="mb-3"
-                      style={{ fontSize: "3rem", color: "#007bff" }}
+                      style={{ fontSize: '3rem', color: '#007bff' }}
                     >
                       🤝 {/* Placeholder de ícono */}
                     </div>
@@ -83,7 +83,7 @@ export const OurMission = () => {
                   <Card className="h-100 text-center p-3">
                     <div
                       className="mb-3"
-                      style={{ fontSize: "3rem", color: "#007bff" }}
+                      style={{ fontSize: '3rem', color: '#007bff' }}
                     >
                       ✨ {/* Placeholder de ícono */}
                     </div>
@@ -102,7 +102,7 @@ export const OurMission = () => {
                   <Card className="h-100 text-center p-3">
                     <div
                       className="mb-3"
-                      style={{ fontSize: "3rem", color: "#007bff" }}
+                      style={{ fontSize: '3rem', color: '#007bff' }}
                     >
                       ⚙️ {/* Placeholder de ícono */}
                     </div>
@@ -120,7 +120,7 @@ export const OurMission = () => {
                   <Card className="h-100 text-center p-3">
                     <div
                       className="mb-3"
-                      style={{ fontSize: "3rem", color: "#007bff" }}
+                      style={{ fontSize: '3rem', color: '#007bff' }}
                     >
                       🧠 {/* Placeholder de ícono */}
                     </div>
@@ -139,7 +139,7 @@ export const OurMission = () => {
                   <Card className="h-100 text-center p-3">
                     <div
                       className="mb-3"
-                      style={{ fontSize: "3rem", color: "#007bff" }}
+                      style={{ fontSize: '3rem', color: '#007bff' }}
                     >
                       📈 {/* Placeholder de ícono */}
                     </div>
@@ -259,7 +259,7 @@ export const OurMission = () => {
                     <Card.Body className="text-center d-flex flex-column align-items-center">
                       <div className="numero-icono-tarjeta d-flex align-items-center justify-content-center mb-3">
                         <span className="numero">1</span>
-                        <BsCalendarCheck className="ms-2 icono-tarjeta" />{" "}
+                        <BsCalendarCheck className="ms-2 icono-tarjeta" />{' '}
                         {/* Icono de Calendario */}
                       </div>
                       <Card.Title className="titulo-tarjeta-liderazgo">
@@ -279,7 +279,7 @@ export const OurMission = () => {
                     <Card.Body className="text-center d-flex flex-column align-items-center">
                       <div className="numero-icono-tarjeta d-flex align-items-center justify-content-center mb-3">
                         <span className="numero">2</span>
-                        <BsBuilding className="ms-2 icono-tarjeta" />{" "}
+                        <BsBuilding className="ms-2 icono-tarjeta" />{' '}
                         {/* Icono de Edificio/Cimientos */}
                       </div>
                       <Card.Title className="titulo-tarjeta-liderazgo">
@@ -299,7 +299,7 @@ export const OurMission = () => {
                     <Card.Body className="text-center d-flex flex-column align-items-center">
                       <div className="numero-icono-tarjeta d-flex align-items-center justify-content-center mb-3">
                         <span className="numero">3</span>
-                        <BsStars className="ms-2 icono-tarjeta" />{" "}
+                        <BsStars className="ms-2 icono-tarjeta" />{' '}
                         {/* Icono de Estrella/Brillo */}
                       </div>
                       <Card.Title className="titulo-tarjeta-liderazgo">
@@ -320,7 +320,7 @@ export const OurMission = () => {
                     <Card.Body className="text-center d-flex flex-column align-items-center">
                       <div className="numero-icono-tarjeta d-flex align-items-center justify-content-center mb-3">
                         <span className="numero">4</span>
-                        <BsGlobe2 className="ms-2 icono-tarjeta" />{" "}
+                        <BsGlobe2 className="ms-2 icono-tarjeta" />{' '}
                         {/* Icono de Globo/Mundo */}
                       </div>
                       <Card.Title className="titulo-tarjeta-liderazgo">

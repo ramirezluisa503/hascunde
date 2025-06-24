@@ -1,8 +1,7 @@
 .principal {
   display: grid;
+  justify-items: center;
   min-height: 100dvh;
   grid-template-rows: auto 1fr auto;
   font-family: 'Manrope', sans-serif;
 }
-
-

@@ -1,29 +1,112 @@
+.frontPage {
+  width: 100%;
+  height: 45rem;
+  background-image: url('../../../assets/images/homePage.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.frontContain {
+  width: 45rem;
+  /* height: 15rem; */
+  position: absolute;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  top: 50%; /* Mueve el borde superior al 50% del padre */
+  left: 50%; /* Mueve el borde izquierdo al 50% del padre */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Ajusta para centrar el elemento por su propio centro */
+
+  /* z-index para la capa superior */
+  z-index: 2; /* Estará encima de .blurImage */
+
+  /* Asegura que el texto sea legible */
+  color: white; /* Color del texto */
+}
+
+.frontTitle {
+  color: white;
+  font-weight: 700;
+  font-size: 4.3rem;
+}
+
+.frontText {
+  color: white;
+  font-size: 1.42rem;
+}
+
+.frontButton {
+  background-color: #83a886; /* Color de fondo verde/oliva de la imagen */
+  width: 17rem;
+  color: #ffffff; /* Color del texto blanco */
+  font-family: Arial, sans-serif; /* Puedes ajustar la fuente para que coincida exactamente */
+  font-size: 1.1rem; /* Tamaño de fuente, puedes ajustarlo si es diferente */
+  font-weight: 600; /* Peso de la fuente, parece semi-bold */
+  padding: 0.8rem 2rem; /* Relleno interno del botón */
+  border: none; /* Quita el borde por defecto */
+  border-radius: 8px; /* Bordes redondeados */
+  cursor: pointer; /* Indica que es clickeable */
+  transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+  text-align: center; /* Centra el texto */
+  text-decoration: none; /* Asegura que no haya subrayado si es un <a> */
+  white-space: nowrap;
+}
+
+.frontButton:hover {
+  background-color: #6a906e;
+}
+
+.blurImage {
+  width: 100%;
+  height: 100%; /* Ocupa todo el alto de su padre (.frontPage) */
+  object-fit: cover; /* Cubre el área, similar a background-size: cover */
+
+  /* Posicionamiento para superponer */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 .leftColumn {
   padding-right: 2rem; /* Espacio entre las columnas en pantallas más grandes */
 }
-.lineContainer{
-
+.lineContainer {
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: -16px;
 }
 
 .mainTitle {
   color: #7c9e85; /* El color verde del título */
-  font-size: 2rem; /* Ajusta el tamaño según necesites */
+  font-size: 3rem; /* Ajusta el tamaño según necesites */
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 
 .verticalLine {
   border-left: 4px solid #7c9e85; /* Línea vertical verde */
-  height: 90px; /* Ajusta la altura según necesites */
-  margin-left: 0; /* Alinea al inicio de la columna */
-  margin-bottom: 1rem;
+  height: 150px; /* Ajusta la altura según necesites */
+  margin-right: 2rem; /* Alinea al inicio de la columna */
 }
 
 .secondaryText {
   color: #242524; /* Color del texto secundario (gris oscuro) */
-  font-size: 1.2rem; /* Ajusta el tamaño según necesites */
-  font-weight: 500;
+  font-size: 1.4rem; /* Ajusta el tamaño según necesites */
+  font-weight: 700;
+  font-style: italic;
 }
 
 .rightColumn {
@@ -31,109 +114,69 @@
 }
 
 .mainParagraph {
-  color: #777; /* El color gris claro del párrafo */
-  font-size: 1rem; /* Ajusta el tamaño según necesites */
+  color: #8c8d8b; /* El color gris claro del párrafo */
+  font-size: 1.5rem; /* Ajusta el tamaño según necesites */
   line-height: 1.6; /* Mejora la legibilidad del párrafo */
 }
 
-/* Estilos para pantallas más pequeñas (responsive) */
-@media (max-width: 767.98px) {
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.mainParagraph2 {
+  color: #8c8d8b; /* El color gris claro del párrafo */
+  font-size: 1.5rem; /* Ajusta el tamaño según necesites */
+  line-height: 1.6; /* Mejora la legibilidad del párrafo */
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  /* desde aqui */
+  .frontPage {
+    height: 30rem; /* Ajusta la altura en móviles */
+  }
+
+  .frontContain {
+    width: 90%; /* Más ancho en móviles */
+    /* height: auto; ya que es absolute, puedes gestionarlo por el contenido */
+    padding: 1rem; /* Ajusta el padding */
+  }
+
+  .frontTitle {
+    font-size: 2.5rem; /* Tamaño de fuente más pequeño */
+  }
+
+  .frontText {
+    font-size: 1rem; /* Tamaño de fuente más pequeño */
+  }
+
+  .frontButton {
+    width: auto;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  /* hasta aqui */
+
   .leftColumn {
-    padding-right: 0; /* Elimina el espacio en pantallas pequeñas */
-    margin-bottom: 2rem; /* Añade espacio entre las secciones */
+    padding-right: 0;
+    margin-bottom: 2rem;
   }
 
   .rightColumn {
-    padding-left: 0; /* Elimina el espacio en pantallas pequeñas */
+    padding-left: 0;
   }
 
   .mainTitle {
-    font-size: 2rem; /* Reduce el tamaño del título en móviles */
+    font-size: 2rem;
   }
 
   .verticalLine {
-    display: flex; /* Oculta la línea vertical en móviles si lo prefieres */
+    display: flex;
   }
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  .card {
-  border: 1px solid #e0e0e0; /* Borde gris claro */
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra suave */
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Transición para efecto hover */
-  min-height: 320px; /* Altura mínima para que todas las tarjetas sean consistentes */
-  display: flex; /* Para flexbox dentro de la tarjeta */
-  flex-direction: column; /* Contenido apilado */
-  justify-content: space-between; /* Espacia el contenido verticalmente */
-  padding-bottom: 1rem; /* Espacio extra al final para la flecha */
-}
-
-.card:hover {
-  transform: translateY(-5px); /* Pequeño levantamiento al pasar el ratón */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada al pasar el ratón */
-}
-
-/* Círculo para el icono */
-.iconCircle {
-  width: 60px;
-  height: 60px;
-  background-color: #f0f8f0; /* Fondo muy claro, casi blanco verdoso */
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto 1rem auto; /* Centra el círculo y añade margen inferior */
-  font-size: 2.2rem; /* Tamaño del icono dentro del círculo */
-  color: #7c9e85; /* Color del icono */
-  border: 1px solid #7c9e85; /* Borde del círculo con el color verde */
-}
-
-/* Título de la tarjeta */
-.cardTitle {
-  color: #242524; /* Color oscuro */
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin-bottom: 0.8rem;
-}
-
-/* Texto de la tarjeta */
-.cardText {
-  color: #777; /* Color gris claro */
-  font-size: 0.95rem;
-  line-height: 1.5;
-  flex-grow: 1; /* Permite que el texto ocupe el espacio disponible y empuje la flecha hacia abajo */
-}
-
-/* Flecha al final de la tarjeta */
-.arrowIcon {
-  color: #7c9e85; /* Color verde de la flecha */
-  font-size: 1.5rem; /* Tamaño de la flecha */
-  margin-top: 1rem; /* Margen superior para separarla del texto */
-}
-
-/* Media Queries para responsividad */
-@media (max-width: 991.98px) { /* Para pantallas más pequeñas que 'lg' (tablet y móvil) */
-  .card {
-    min-height: 280px; /* Altura mínima ligeramente menor en pantallas más pequeñas */
-  }
-}
-
-@media (max-width: 767.98px) { /* Para pantallas más pequeñas que 'md' (móvil) */
-  .card {
-    min-height: auto; /* Permite que la altura se ajuste al contenido */
-  }
   /* Puedes ajustar el padding del Container si las tarjetas están muy pegadas a los lados del móvil */
   .container.my-5 {
     padding-left: 1rem;
@@ -141,22 +184,6 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+/* --- Media Query para Móviles --- */
+@media (max-width: 768px) {
 }
