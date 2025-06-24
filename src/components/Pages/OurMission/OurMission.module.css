@@ -1,0 +1,117 @@
+.OurMissionButton {
+  padding: 0.5rem 1rem; 
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color:#7c9e85;
+  border-color: #7c9e85;
+  color:#ffffff;
+  margin-bottom: 1rem;
+}
+
+ .container1 {
+    padding-top: 3rem; 
+    padding-bottom: 3rem;
+    margin-top: 0%;
+    margin-bottom: 0rem;
+}
+.containerCards{
+    margin-top: 0rem; 
+    margin-bottom: 3rem; 
+    padding-left: 15px; 
+    padding-right: 15px;
+
+}
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.contentCol {
+    margin-bottom: 1.5rem; 
+    padding-right: 15px; 
+    padding-left: 15px;
+}
+.title {
+    font-weight: bold;
+    color: #333;
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    padding-right: 2rem;
+}
+.titleUpCard{
+    font-weight: bold; /* Título en negrita */
+    color: #242524; /* Color de texto oscuro */
+    text-align: center; 
+    margin-bottom: 3rem; 
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+.titleCards{
+    font-weight: bold; /* Título en negrita */
+    color: #242524; /* Color de texto oscuro */
+    text-align: center; 
+    margin-bottom: 2rem; 
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+.description {
+    line-height: 1.6;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    color: #8c8d8b;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding-right: 2rem;
+}
+.image1 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;;
+}
+
+.card {
+    height: 100%; /* Asegura que todas las cards tengan la misma altura si están en la misma fila */
+    border-radius: 10px; 
+    padding: 1.5rem; 
+    background-color: #fff; 
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.08); 
+}
+
+.cardText{
+    color: #8c8d8b; /* Color de texto gris suave (equivalente a 'text-muted') */
+    line-height: 1.5; 
+    font-size: 0.95rem; 
+    text-align: left;
+}
+.cardTitle {
+    font-weight: bold; 
+    color: #242524; 
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem; 
+}
+
+.iconWrapper {
+    margin-bottom: 1rem; /* Espacio debajo del ícono (equivalente a 'mb-3') */
+    /* El ícono de la imagen tiene un color gris muy claro y a veces un círculo de fondo sutil */
+    color: #6f6953; /* Color gris muy claro para el ícono */
+    background-color: #f0f0ed;
+    border-radius: 50px;
+    font-size: 2.5rem; /* Tamaño del ícono (equivalente a '3rem' en tu código) */
+    display: flex; /* Para centrar el ícono si es necesario */
+    justify-content: center; /* Centra el ícono horizontalmente */
+    align-items: center; /* Centra el ícono verticalmente */
+    /* Si quieres el círculo de fondo sutil detrás del ícono: */
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    margin-left: 0%;
+    margin-right: auto;
+    
+}
+
