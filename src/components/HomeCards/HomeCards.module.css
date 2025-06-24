@@ -1,0 +1,55 @@
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra suave */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Transición para efecto hover */
+  min-height: 320px; /* Altura mínima para que todas las tarjetas sean consistentes */
+  display: flex; /* Para flexbox dentro de la tarjeta */
+  flex-direction: column; /* Contenido apilado */
+  justify-content: space-between; /* Espacia el contenido verticalmente */
+  padding-bottom: 1rem;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Pequeño levantamiento al pasar el ratón */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada al pasar el ratón */
+}
+
+/* Círculo para el icono */
+.iconCircle {
+  width: 60px;
+  height: 60px;
+  background-color: #f0f8f0; /* Fondo muy claro, casi blanco verdoso */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1rem auto; /* Centra el círculo y añade margen inferior */
+  font-size: 2.2rem; /* Tamaño del icono dentro del círculo */
+  color: #7c9e85; /* Color del icono */
+  border: 1px solid #7c9e85; /* Borde del círculo con el color verde */
+}
+
+/* Título de la tarjeta */
+.cardTitle {
+  color: #242524; /* Color oscuro */
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+/* Texto de la tarjeta */
+.cardText {
+  color: #777; /* Color gris claro */
+  font-size: 0.95rem;
+  line-height: 1.5;
+  flex-grow: 1; /* Permite que el texto ocupe el espacio disponible y empuje la flecha hacia abajo */
+}
+
+/* Flecha al final de la tarjeta */
+.arrowIcon {
+  color: #7c9e85; /* Color verde de la flecha */
+  font-size: 1.5rem; /* Tamaño de la flecha */
+  margin-top: 1rem; /* Margen superior para separarla del texto */
+  margin-left: 5rem;
+}

@@ -9,7 +9,7 @@ export const Logo = () => {
         src={hascundeLogo}
         alt="hascunde-logo"
       />
-      <h2>Hascunde</h2>
+      <h3 className={styles.font}>Hascunde</h3>
     </section>
   );
 };
