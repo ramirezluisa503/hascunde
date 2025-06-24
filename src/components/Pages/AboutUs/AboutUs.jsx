@@ -1,9 +1,9 @@
-import { Layout } from '../../Layout/Layout';
-import TeamMembers from '../../TeamMembers/TeamMembers';
-import { Row, Col, Container, Button, Card } from 'react-bootstrap';
-// import Portada from '../../../assets/images/PortadaAboutUs1.webp';
-import Campesinos from '../../../assets/images/Campesinos1.webp';
-import Autoconfianza from '../../../assets/images/Autoconfianza1.webp';
+import { Layout } from "../../Layout/Layout";
+import styles from "../AboutUs/AboutUs.module.css";
+import TeamMembers from "../../TeamMembers/TeamMembers";
+import { Row, Col, Container, Button, Card } from "react-bootstrap";
+import Cafeteros from "../../../assets/images/CafeterosAboutUs.webp";
+import Autoconfianza from "../../../assets/images/AutoconfianzaAboutUs.webp";
 
 export const AboutUs = () => {
   return (
@@ -12,16 +12,16 @@ export const AboutUs = () => {
         <Container>
           <Row>
             <Col>
-              {/* <img src={Portada} alt="Portada About Us" className="img-fluid" /> */}
+              <h1>PORTADA ABOUT US</h1>
             </Col>
           </Row>
         </Container>
 
-        <Container>
+        <Container className={styles.aboutUsContainer2}>
           <Row>
-            <Col xs={12} md={6}>
-              <h2>¿ Por qué HASCUNDE?</h2>
-              <p>
+            <Col xs={12} md={6} className={styles.textColum}>
+              <h2 className={styles.hascundeTitle}>¿ Por qué HASCUNDE?</h2>
+              <p className={styles.paragraph}>
                 El nombre 'Hascunde' proviene del euskera 'Hazkunde', que
                 significa 'crecimiento' o 'desarrollo'. Este concepto es
                 esencial para la misión de la empresa, que busca fomentar el
@@ -40,24 +40,28 @@ export const AboutUs = () => {
                 y abrazar la auténtica libertad. Se trata de cultivar la
                 disciplina, la consciencia y la resiliencia necesarias para
                 afrontar las complejidades de la vida con gracia y propósito, lo
-                que nos lleva a una existencia equilibrada y plena.{' '}
+                que nos lleva a una existencia equilibrada y plena.{" "}
               </p>
-              <Button variant="success">Explore Our Core Values</Button>
+              <Button variant="secondary" className={styles.hascundeButton}>
+                Explore Our Core Values
+              </Button>
             </Col>
-            <Col xs={12} md={6}>
+            <Col xs={12} md={6} className={styles.imageColum}>
               <img
-                src={Campesinos}
-                alt="Campesinos cosechando"
-                className="img-fluid"
+                src={Cafeteros}
+                alt="Cafeteros cosechando"
+                className={styles.hascundeImage}
               />
             </Col>
           </Row>
         </Container>
-        <Container>
+        <Container className={styles.aboutUsContainer3}>
           <Row>
             <Col xs={12} md={6}>
-              <h2>El Poder del Autoconocimiento</h2>
-              <p>
+              <h2 className={styles.powerTitle}>
+                El Poder del Autoconocimiento
+              </h2>
+              <p className={styles.textColum}>
                 El autoconocimiento se refiere a la comprensión profunda de uno
                 mismo, incluyendo emociones, motivaciones, valores y
                 comportamientos. Esta capacidad de reflexión permite a las
@@ -65,93 +69,106 @@ export const AboutUs = () => {
                 crecimiento personal y profesional.
               </p>
             </Col>
-            <Col xs={12} md={6}>
+            <Col xs={12} md={6} className={styles.imageColum}>
               <img
                 src={Autoconfianza}
                 alt="Imagen Autoconfianza"
-                className="img-fluid"
+                className={styles.powerImage}
               />
             </Col>
           </Row>
         </Container>
 
-        <Container>
+        <Container className="my-5">
           <Row className="g-4">
-            <Col xs={12} md={6}>
-              <Col xs={12} md={8}>
-                <Card>
-                  <Card.Body>
-                    <Card.Title>
-                      Evaluación de Fortalezas CliftonStrenght
-                    </Card.Title>
-                    <Card.Text>
-                      Tus informes y guías personalizados de CliftonStrengths te
-                      brindarán un momento revelador a medida que experimentas
-                      nuevas formas de comprender lo que te hace tan único.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-                <Card>
-                  <Card.Body>
-                    <Card.Title>Poder Físico</Card.Title>
-                    <Card.Text>
-                      Libertad de movimiento para disfrutar de la vida
-                      plenamente, conectando la mente con el cuerpo,
-                      aprendiéndolo a dominar en aspectos como fuerza,
-                      movilidad, flexibilidad, estabilidad, potencia, velocidad
-                      y resistencia.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
+            {/* Card 1 */}
+            <Col xs={12} md={6} className="mb-4">
+              <Card className={`${styles.cards} h-100`}>
+                <Card.Body>
+                  <Card.Title className={styles.cardsH3}>
+                    Evaluación de Fortalezas CliftonStrenght
+                  </Card.Title>
+                  <Card.Text className={styles.cardsP}>
+                    Tus informes y guías personalizados de CliftonStrengths te
+                    brindarán un momento revelador a medida que experimentas
+                    nuevas formas de comprender lo que te hace tan único.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
             </Col>
-            <Col xs={12} md={6}>
-              <Col xs={12} md={8}>
-                <Card>
-                  <Card.Body>
-                    <Card.Title>Gestor de conocimiento</Card.Title>
-                    <Card.Text>
-                      Cómo organizar nuestras ideas, pensamiento y notas?
-                      Entrarás a un nuevo concepto de Cerebro Digital, para que
-                      puedas capturar, procesar, aprender y compartir
-                      información, para que lo conviertas en tu legado
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-                <Card>
-                  <Card.Body>
-                    <Card.Title>Cosmovisión y Espiritualidad</Card.Title>
-                    <Card.Text>
-                      Compartiremos las distintas cosmovisiones y te mostraremos
-                      algunas de las guías y pensamientos de grandes hombres de
-                      la historia, que te ayudaran a transitar el camino del
-                      autoconocimiento e individuación necesario para crecer.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
+
+            {/* Card 2 */}
+            <Col xs={12} md={6} className="mb-4">
+              <Card className={`${styles.cards} h-100`}>
+                <Card.Body>
+                  <Card.Title className={styles.cardsH3}>
+                    Gestor de conocimiento
+                  </Card.Title>
+                  <Card.Text className={styles.cardsP}>
+                    Cómo organizar nuestras ideas, pensamiento y notas? Entrarás
+                    a un nuevo concepto de Cerebro Digital, para que puedas
+                    capturar, procesar, aprender y compartir información, para
+                    que lo conviertas en tu legado
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            {/* Card 3 */}
+            <Col xs={12} md={6} className="mb-4">
+              <Card className={`${styles.cards} h-100`}>
+                <Card.Body>
+                  <Card.Title className={styles.cardsH3}>
+                    Poder Físico
+                  </Card.Title>
+                  <Card.Text className={styles.cardsP}>
+                    Libertad de movimiento para disfrutar de la vida plenamente,
+                    conectando la mente con el cuerpo, aprendiéndolo a dominar
+                    en aspectos como fuerza, movilidad, flexibilidad,
+                    estabilidad, potencia, velocidad y resistencia.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            {/* Card 4 */}
+            <Col xs={12} md={6} className="mb-4">
+              <Card className={`${styles.cards} h-100`}>
+                <Card.Body>
+                  <Card.Title className={styles.cardsH3}>
+                    Cosmovisión y Espiritualidad
+                  </Card.Title>
+                  <Card.Text className={styles.cardsP}>
+                    Compartiremos las distintas cosmovisiones y te mostraremos
+                    algunas de las guías y pensamientos de grandes hombres de la
+                    historia, que te ayudaran a transitar el camino del
+                    autoconocimiento e individuación necesario para crecer.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
             </Col>
           </Row>
         </Container>
 
         <Container>
-          <h2>Guiding Voices</h2>
-          <p>Meet the dedicated individuals driving the Hascunde vision</p>
+          <h2 className={styles.guidingVoicesTitle}>Guiding Voices</h2>
+          <p className={styles.guidingVoicesDescription}>Meet the dedicated individuals driving the Hascunde vision</p>
         </Container>
 
         <TeamMembers />
 
-        <Container>
+        <Container className={styles.legacyContainer}>
           <Row>
             <Col xs={12} md={12}>
-              <h3>Quieres dejar un Legado?</h3>
-              <p>
+              <h3 className={styles.legacyTitle}>Quieres dejar un Legado?</h3>
+              <p className={styles.legacyText}>
                 Hascunde es más que un programa; es un compromiso de por vida
-                con el crecimiento.
-                <br /> Únete a una hermandad de hombres que forjan caminos más
+                con el crecimiento. Únete a una hermandad de hombres que forjan caminos más
                 sólidos.
               </p>
-              <Button variant="success">Connect With Us Today</Button>
+              <Button variant="secondary" className={styles.hascundeButton}>
+                Connect With Us Today
+              </Button>
             </Col>
           </Row>
         </Container>
