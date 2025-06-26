@@ -149,7 +149,17 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
+.cards:hover {
+    /* Nuevos estilos cuando el mouse está sobre la tarjeta */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombra más grande y/o oscura */
+    transform: translateY(-5px); /* Opcional: Levanta ligeramente la tarjeta */
+}
+
+
+
+
 .cardsH3 {
   font-size: 1.25rem;
   font-weight: 600;
@@ -187,10 +197,9 @@
 }
 .legacyContainer {
   background-color: #6f6953;
-  border-radius: 8px;
   padding: 40px 20px;
   text-align: center;
-  max-width: 98%;
+  max-width: 100%;
   margin: 80px auto;
 }
 .legacyTitle {
@@ -207,4 +216,56 @@
   max-width: 50%;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  /* desde aqui */
+  .frontPage {
+    height: 30rem; /* Ajusta la altura en móviles */
+  }
+
+  .frontContain {
+    width: 90%; /* Más ancho en móviles */
+    /* height: auto; ya que es absolute, puedes gestionarlo por el contenido */
+    padding: 1rem; /* Ajusta el padding */
+  }
+
+  .frontTitle {
+    font-size: 2.5rem; /* Tamaño de fuente más pequeño */
+  }
+
+  .frontText {
+    font-size: 1rem; /* Tamaño de fuente más pequeño */
+  }
+
+  .frontButton {
+    width: auto;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  /* hasta aqui */
+
+  .leftColumn {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .rightColumn {
+    padding-left: 0;
+  }
+
+  .mainTitle {
+    font-size: 2rem;
+  }
+
+  .verticalLine {
+    display: flex;
+  }
+
+  /* Puedes ajustar el padding del Container si las tarjetas están muy pegadas a los lados del móvil */
+  .container.my-5 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
