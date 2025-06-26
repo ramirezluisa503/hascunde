@@ -1,9 +1,11 @@
 import styles from './HomePage.module.css';
 import Tibetan from '../../../assets/images/SobrePortadaHascundeHomePage.webp';
 import { Layout } from '../../Layout/Layout';
-import { Row, Col, Container, Card, Button } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import front from '../../../assets/images/hascundeBlur.webp';
 import { HomeCards } from '../../HomeCards/HomeCards';
+import { HelpYouCard } from '../../HelpYouCard/HelpYouCard';
+import { Button } from '../../Button/Button';
 
 export const HomePage = () => {
   return (
@@ -16,7 +18,7 @@ export const HomePage = () => {
             Familia, Tranquilidad, Bienestar y Consciencia para el Hombre Líder
             en busqueda de autoconocerse
           </p>
-          <button className={styles.frontButton}>Begin Your Journey</button>
+          <Button text={'Begin Your Journey'} />
         </div>
       </section>
 
@@ -99,58 +101,60 @@ export const HomePage = () => {
       <Container>
         <Row>
           <Col xs={12} md={8}>
-            <div>
-              <h2>Cómo te puede ayudar Hascunde?</h2>
-            </div>
-            <div>
-              <h3>Coaching: Potenciando Liderazgo</h3>
-              <p>
-                El coaching de Hascunde se centra en desarrollar un liderazgo
-                consciente, gestionando cambios con tranquilidad. Los líderes
-                fortalecen su productividad y eficiencia mientras priorizan su
-                bienestar, aplicando principios estratégicos adaptados a su
-                contexto personal y profesional.
-              </p>
-              <br />
-              <h3>Mentoring: Guía Experta</h3>
-              <p>
-                Los programas de mentoring ofrecen guía a nuevos emprendedores y
-                líderes. Con un enfoque en la perspectiva familiar, se fomenta
-                el desarrollo de carreras con consciencia y se facilita una
-                transferencia de conocimiento orientada al bienestar integral.
-              </p>
-              <br />
-              <h3>Consultoría: Estrategias exponenciales y comerciales</h3>
-              <p>
-                La consultoría de Hascunde se enfoca en desarrollar estrategias
-                con un enfoque humano, garantizando resultados sostenibles. Se
-                abordan aspectos como la planificación estratégica de ventas
-                consultivas y optimización de procesos, siempre priorizando el
-                bienestar del equipo.
-              </p>
-              <br />
-              <h3>Servicios Tecnológicos de transformación Digital</h3>
-              <p>
-                Asesoría en digitalización y transformación digital para
-                emprendedores y empresas con perfiles exponenciales, también,
-                acompañamos para la apropiación de la inteligencia artificial y
-                el análisis de datos.
-              </p>
-            </div>
+            <h2 className={styles.greenTitle}>
+              Cómo te puede ayudar Hascunde?
+            </h2>
+
+            <HelpYouCard
+              title={'Coaching: Potenciando Liderazgo'}
+              text={
+                'El coaching de Hascunde se centra en desarrollar un liderazgo consciente, gestionando cambios con tranquilidad. Los líderes fortalecen su productividad y eficiencia mientras priorizan su bienestar, aplicando principios estratégicos adaptados a su contexto personal y profesional.'
+              }
+            />
+
+            <HelpYouCard
+              title={'Mentoring: Guía Experta'}
+              text={
+                'Los programas de mentoring ofrecen guía a nuevos emprendedores y líderes. Con un enfoque en la perspectiva familiar, se fomenta el desarrollo de carreras con consciencia y se facilita una transferencia de conocimiento orientada al bienestar integral.'
+              }
+            />
+
+            <HelpYouCard
+              title={'Consultoría: Estrategias exponenciales y comerciales'}
+              text={
+                'La consultoría de Hascunde se enfoca en desarrollar estrategias con un enfoque humano, garantizando resultados sostenibles. Se abordan aspectos como la planificación estratégica de ventas consultivas y optimización de procesos, siempre priorizando el bienestar del equipo.'
+              }
+            />
+
+            <HelpYouCard
+              title={'Servicios Tecnológicos de transformación Digital'}
+              text={
+                'Asesoría en digitalización y transformación digital para emprendedores y empresas con perfiles exponenciales, también, acompañamos para la apropiación de la inteligencia artificial y el análisis de datos.'
+              }
+            />
           </Col>
-          <Col xs={12} md={4}>
-            <img src={Tibetan} alt="Samatha Tibetan Meditation Thangka" />
-            <h4>Samatha Tibetan Meditation Thangka</h4>
-            <Button variant="success">Discover Our Programs</Button>
+
+          <Col xs={12} md={4} className={styles.tibetanContent}>
+            <img
+              src={Tibetan}
+              alt="Samatha Tibetan Meditation Thangka"
+              className={styles.tibetanImage}
+            />
+            <h4 className={styles.starText}>
+              Samatha Tibetan Meditation Thangka
+            </h4>
+            <Button text={'Discover Our Programs'} />
           </Col>
         </Row>
       </Container>
 
       <Container>
         <Row>
-          <Col xs={12} md={12}>
-            <h2>Listo para forjar tu camino hacia el balance y la libertad?</h2>
-            <Button variant="light">Connect with Us Today</Button>
+          <Col xs={12} md={12} className={styles.brownWall}>
+            <h2 className={styles.brownTitle}>
+              Listo para forjar tu camino hacia el balance y la libertad?
+            </h2>
+            <Button text={'Connect with Us Today'} />
           </Col>
         </Row>
       </Container>

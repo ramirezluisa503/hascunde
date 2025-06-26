@@ -4,13 +4,11 @@ import TeamMembers from '../../TeamMembers/TeamMembers';
 import { Row, Col, Container, Button, Card } from 'react-bootstrap';
 import Cafeteros from '../../../assets/images/CafeterosAboutUs.webp';
 import Autoconfianza from '../../../assets/images/AutoconfianzaAboutUs.webp';
-import front from '../../../assets/images/hascundeBlur.webp';
 
 export const AboutUs = () => {
   return (
     <Layout>
       <section className={styles.frontPage}>
-        {/* <img src={front} alt="front" className={styles.blurImage} /> */}
         <div className={styles.overlayBlur}></div>
         <div className={styles.frontContain}>
           <h1 className={styles.frontTitle}>

@@ -37,27 +37,6 @@
   font-size: 1.42rem;
 }
 
-.frontButton {
-  background-color: #83a886;
-  width: 17rem;
-  color: #ffffff;
-  font-family: Arial, sans-serif;
-  font-size: 1.1rem;
-  font-weight: 600;
-  padding: 0.8rem 2rem;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.frontButton:hover {
-  background-color: #6a906e;
-}
-
 .blurImage {
   width: 100%;
   height: 100%;
@@ -171,6 +150,48 @@
     padding-left: 1rem;
     padding-right: 1rem;
   }
+}
+
+.greenTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #7c9e85;
+}
+
+.tibetanImage {
+  width: 22rem;
+  margin-top: 4rem;
+}
+
+.tibetanContent {
+  height: 43rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.starText {
+  color: #8c8d8b;
+  font-size: 1rem;
+}
+
+.brownWall {
+  width: 100%;
+  margin-top: 3rem;
+  height: 18rem;
+  background-color: #6f6953;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.brownTitle {
+  color: white;
+  font-weight: 700;
+  font-size: 2.7rem;
+  margin-bottom: 1rem;
 }
 
 /* --- Media Query para Móviles --- */
