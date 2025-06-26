@@ -18,7 +18,7 @@ export const AboutUs = () => {
             Vivimos en un contexto de evolución tecnológica constante que nos
             plantea retos para nuestro desarrollo personal y profesional
           </p>
-          <button className={styles.frontButton}>Learn More</button>
+          <button className={styles.frontButton}>Aprender Más</button>
         </div>
       </section>
 
@@ -48,7 +48,7 @@ export const AboutUs = () => {
               a una existencia equilibrada y plena.{' '}
             </p>
             <Button variant="secondary" className={styles.hascundeButton}>
-              Explore Our Core Values
+              Explora Nuestros Valores Fundamentales
             </Button>
           </Col>
           <Col xs={12} md={6} className={styles.imageColum}>
@@ -152,9 +152,9 @@ export const AboutUs = () => {
       </Container>
 
       <Container>
-        <h2 className={styles.guidingVoicesTitle}>Guiding Voices</h2>
+        <h2 className={styles.guidingVoicesTitle}>Voces Guía</h2>
         <p className={styles.guidingVoicesDescription}>
-          Meet the dedicated individuals driving the Hascunde vision
+          Conoce a las personas dedicadas que impulsan la visión de Hascunde
         </p>
       </Container>
 
@@ -170,7 +170,7 @@ export const AboutUs = () => {
               caminos más sólidos.
             </p>
             <Button variant="secondary" className={styles.hascundeButton}>
-              Connect With Us Today
+              Contáctanos Hoy
             </Button>
           </Col>
         </Row>

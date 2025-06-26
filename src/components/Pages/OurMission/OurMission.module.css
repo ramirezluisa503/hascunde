@@ -16,10 +16,38 @@
     margin-bottom: 0rem;
 }
 .containerCards{
-    margin-top: 0rem; 
-    margin-bottom: 3rem; 
     padding-left: 15px; 
     padding-right: 15px;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 1rem auto 4rem auto;
+    
+    
+}
+
+
+
+
+
+.imgCustomers{
+border-radius: 50px;
+width: 40px;
+height: 40px;
+}
+.textCustomers{
+  font-size: 1.1em;
+  color: #242524;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+.infoCustomers{
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
 
 }
 .row1{
@@ -79,6 +107,12 @@
     padding: 1.5rem; 
     background-color: #fff; 
     box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.08); 
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.card:hover {
+    /* Nuevos estilos cuando el mouse está sobre la tarjeta */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombra más grande y/o oscura */
+    transform: translateY(-5px); /* Opcional: Levanta ligeramente la tarjeta */
 }
 
 .cardText{
@@ -95,23 +129,194 @@
 }
 
 .iconWrapper {
-    margin-bottom: 1rem; /* Espacio debajo del ícono (equivalente a 'mb-3') */
-    /* El ícono de la imagen tiene un color gris muy claro y a veces un círculo de fondo sutil */
-    color: #6f6953; /* Color gris muy claro para el ícono */
+    margin-bottom: 1rem; 
+    color: #6f6953; 
     background-color: #f0f0ed;
     border-radius: 50px;
-    font-size: 2.5rem; /* Tamaño del ícono (equivalente a '3rem' en tu código) */
-    display: flex; /* Para centrar el ícono si es necesario */
+    font-size: 2.5rem; 
+    display: flex;
     justify-content: center; /* Centra el ícono horizontalmente */
     align-items: center; /* Centra el ícono verticalmente */
-    /* Si quieres el círculo de fondo sutil detrás del ícono: */
-    
+    /* Circulo detras del icono */
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #f7f7f7;
-    margin-left: 0%;
-    margin-right: auto;
+    background-color: #f7f7f7; 
     
 }
+
+.transformationContainer {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 70px 40px 50px 40px;
+  text-align: center;
+  max-width: 2000px;
+  min-height: 350px;
+  margin: 80px auto;
+  border: 1px solid #EBEBEAFF;
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1F;
+}
+.transformationTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #242524;
+  margin-bottom: 1.5rem;
+}
+.transformationText {
+  font-size: 1.1rem;
+  color: #8c8d8b;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hascundeButton {
+  padding: 0.5rem 1rem; /* Más relleno para un botón más grande */
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: #7c9e85;
+  border-color: #7c9e85;
+  color: #ffffff;
+}
+
+
+.leadershipTransformationSection {
+  padding: 20px 0; 
+}
+
+/* Estilos para el título principal de la sección */
+.titleCards1 {
+  text-align: center; 
+  margin-bottom: 50px; 
+  font-size: 2.5rem; 
+  color: #242524; 
+  font-weight: 600; 
+}
+
+/* Estilos generales para cada tarjeta */
+.transformationCard {
+  border: 1px solid #ebebea; 
+  border-radius: 12px; 
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1F;  
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transición suave para el efecto hover */
+  background-color: #fff; 
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px; 
+  margin-bottom: 10px; 
+
+}
+
+.transformationCard:hover {
+    /* Nuevos estilos cuando el mouse está sobre la tarjeta */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombra más grande y/o oscura */
+    transform: translateY(-5px); /* Opcional: Levanta ligeramente la tarjeta */
+}
+
+.cardTestimony{
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cardTestimony:hover {
+    /* Nuevos estilos cuando el mouse está sobre la tarjeta */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombra más grande y/o oscura */
+    transform: translateY(-5px); /* Opcional: Levanta ligeramente la tarjeta */
+}
+
+
+
+.cardNumberCircle {
+  width: 50px;
+  height: 50px;
+  background-color: #f0f0ed; /* Gris claro, similar al de la imagen */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #6f6953; 
+  border: 1px solid #d6d5ce; /* Eliminar el borde que tenías si no es necesario */
+  margin-right: 15px; /* <-- Espacio a la derecha para separar del contenido */
+  flex-shrink: 0; /* <-- Evita que el número se encoja */
+  margin-top: 5px; /* <-- Ajuste vertical para alinear con el icono/título */
+
+}
+
+/* Estilos para el icono (tu .icono-tarjeta) */
+.cardIcon {
+  font-size: 1.5rem; /* Tamaño más grande para el icono */
+  color: #6f6953; /* Color del icono gris sutil */ 
+}
+.titleIcon{
+  display: flex; /* Habilita Flexbox para alinear los ítems en una fila */
+  align-items: center; /* Centra verticalmente el icono y el título */
+  gap: 8px;
+  margin-bottom: 0; /* Espacio entre el título y la descripción */
+}
+
+/* Estilos para el título de la tarjeta (tu .titulo-tarjeta-liderazgo) */
+.cardTitle {
+  font-size: 1.3rem; /* Tamaño de fuente */
+  font-weight: 600; /* Negrita */
+  color: #242524; /* Color de texto */
+  margin-bottom: 0; /* Margen inferior */
+  text-align: left;
+}
+
+/* Estilos para la descripción de la tarjeta (nueva clase) */
+.cardDescription {
+  font-size: 0.85rem; /* Tamaño de fuente ligeramente más pequeño */
+  color: #8c8d8b; /* Color de texto gris */
+  line-height: 1.4; /* Espaciado entre líneas para mejor legibilidad */
+  text-align: left;
+  margin-top: 0;
+  margin-left: 70px;
+
+}
+
+
+
+.cardBodyContent {
+  padding: 0; 
+  flex-grow: 1; /* <-- Permite que Card.Body ocupe el espacio restante */
+  display: flex;
+  flex-direction: column; /* <-- Apila el icono/título y la descripción verticalmente */
+  align-items: flex-start;
+}
+
+.bodyNumberTitle{
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
