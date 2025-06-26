@@ -10,25 +10,25 @@ const teamMembers = [
   {
     id: 1,
     name: 'Elijah Thorne',
-    title: 'Founder & Visionary',
+    title: 'Fundador & Visionario',
     image: elijahImage,
   },
   {
     id: 2,
     name: 'Marcus Stone',
-    title: 'Chief Growth Officer',
+    title: 'Director de Estrategia y Crecimiento',
     image: marcusImage,
   },
   {
     id: 3,
     name: 'Caleb Vance',
-    title: 'Head of Community',
+    title: 'Jefe de Comunidad',
     image: calebImage,
   },
   {
     id: 4,
     name: 'Liam Hayes',
-    title: 'Program Director',
+    title: 'Director de Programa',
     image: liamImage,
   },
 ];
