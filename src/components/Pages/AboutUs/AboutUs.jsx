@@ -9,7 +9,6 @@ export const AboutUs = () => {
   return (
     <Layout>
       <section className={styles.frontPage}>
-        {/* <img src={front} alt="front" className={styles.blurImage} /> */}
         <div className={styles.overlayBlur}></div>
         <div className={styles.frontContain}>
           <h1 className={styles.frontTitle}>

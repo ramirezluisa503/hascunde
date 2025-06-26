@@ -68,16 +68,6 @@
   background-color: #6a906e;
 }
 
-.blurImage {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
 .aboutUsContainer2 {
   padding: 3rem 1rem;
 }
