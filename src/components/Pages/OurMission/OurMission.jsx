@@ -5,6 +5,14 @@ import styles from "../OurMission/OurMission.module.css";
 import FormulaExo from "../../../assets/images/FormulaEXO.webp";
 import Chris from "../../../assets/images/Chris.webp";
 import David from "../../../assets/images/David.webp";
+import icono from "../../../assets/images/Icono2.webp";
+import iconoBrain from "../../../assets/images/iconoBrain.webp";
+import iconoStar from "../../../assets/images/iconoStar.webp";
+import iconoCalendar from "../../../assets/images/iconoCalendar.webp"
+import iconoFlag from "../../../assets/images/iconoFlag.webp"
+import iconoHands from "../../../assets/images/iconoHands.webp"
+
+
 
 export const OurMission = () => {
   return (
@@ -26,7 +34,7 @@ export const OurMission = () => {
               </p>
 
               <Button variant="secondary" className={styles.OurMissionButton}>
-                Discover Our Impact
+                Descubre Nuestro Impacto
               </Button>
             </Col>
             <Col xs={12} md={6}>
@@ -98,16 +106,7 @@ export const OurMission = () => {
                 <Col xs={12} sm={6} md={4}>
                   <Card className={styles.card}>
                     <div className={styles.iconWrapper}>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="25"
-                        height="25"
-                        fill="currentColor"
-                        class="bi bi-stars"
-                        viewBox="0 0 16 16"
-                      >
-                        <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
-                      </svg>
+                      <img src={iconoStar} alt="icono star" />
                     </div>
                     <Card.Title className={styles.cardTitle}>
                       Acción con Propósito
@@ -148,16 +147,7 @@ export const OurMission = () => {
                 <Col xs={12} sm={6} md={4}>
                   <Card className={styles.card}>
                     <div className={styles.iconWrapper}>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="25"
-                        height="25"
-                        fill="currentColor"
-                        class="bi bi-lightbulb"
-                        viewBox="0 0 16 16"
-                      >
-                        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1" />
-                      </svg>
+                      <img src={iconoBrain} alt="icono cerebro" />
                     </div>
                     <Card.Title className={styles.cardTitle}>
                       Liderazgo Consciente
@@ -173,16 +163,7 @@ export const OurMission = () => {
                 <Col xs={12} sm={6} md={4}>
                   <Card className={styles.card}>
                     <div className={styles.iconWrapper}>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="25"
-                        height="25"
-                        fill="currentColor"
-                        class="bi bi-reception-4"
-                        viewBox="0 0 16 16"
-                      >
-                        <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z" />
-                      </svg>
+                      <img src={icono} alt="icono" />
                     </div>
                     <Card.Title className={styles.cardTitle}>
                       Creación de hábitos estratégicos
@@ -203,189 +184,201 @@ export const OurMission = () => {
             <h2 className={styles.titleCards}>
               Transformando Vidas: Lo que dicen nuestros clientes
             </h2>
-            <Row className="justify-content-center">
+            <Row className={styles.containerCards}>
               {/* Tarjeta de Testimonio 1 */}
               <Col xs={12} md={6} lg={4} className="mb-4">
-                <Card>
+                <Card className={styles.cardTestimony}>
                   <Card.Body>
-                    <Card.Text>
+                    <Card.Text className={styles.textCustomers}>
                       "Hascunde me ayudó a redescubrir mi propósito y
                       reequilibrar mi vida. El apoyo estructurado fue
                       exactamente lo que necesitaba para prosperar en mi carrera
                       y como padre."
                     </Card.Text>
-                  </Card.Body>
-                  <Card.Footer className="d-flex align-items-center">
-                    <Image
-                      src={Chris}
-                      alt="Michael R."
-                      roundedCircle
-                      className="Michael-testimonio"
-                    />
-                    <div className="ms-3">
-                      <h6 className="mb-0">Michael R.</h6>
-                      <small className="text-muted">
-                        Entrepreneur & Father
-                      </small>
+                    <div className={styles.infoCustomers}>
+                      <Image
+                        src={Chris}
+                        alt="Michael R."
+                        roundedCircle
+                        className={styles.imgCustomers}
+                      />
+                      <div className="ms-3">
+                        <h6 className="mb-0">Michael R.</h6>
+                        <small className="text-muted">
+                          Entrepreneur & Father
+                        </small>
+                      </div>
                     </div>
-                  </Card.Footer>
+                  </Card.Body>
                 </Card>
               </Col>
 
               {/* Tarjeta de Testimonio 2 */}
               <Col xs={12} md={6} lg={4} className="mb-4">
-                <Card className="h-100 tarjeta-testimonio">
+                <Card className={styles.cardTestimony}>
                   <Card.Body>
-                    <Card.Text>
+                    <Card.Text className={styles.textCustomers}>
                       "Encontré tranquilidad en medio del caos. Los principios
                       de consciencia de Hascunde transformaron mi enfoque diario
                       para el estrés y la toma de decisiones."
                     </Card.Text>
-                  </Card.Body>
-                  <Card.Footer className="d-flex align-items-center">
-                    {/* REEMPLAZA ESTA RUTA CON LA RUTA REAL DE TU IMAGEN */}
-                    <Image
-                      src={David}
-                      alt="David L."
-                      roundedCircle
-                      className="David-testimonio"
-                    />
-                    <div className="ms-3">
-                      <h6 className="mb-0">David L.</h6>
-                      <small className="text-muted">Senior Executive</small>
+                    <div className={styles.infoCustomers}>
+                    
+                      <Image
+                        src={David}
+                        alt="David L."
+                        roundedCircle
+                        className={styles.imgCustomers}
+                      />
+                      <div className="ms-3">
+                        <h6 className="mb-0">David L.</h6>
+                        <small className="text-muted">Senior Executive</small>
+                      </div>
                     </div>
-                  </Card.Footer>
+                  </Card.Body>
                 </Card>
               </Col>
 
               {/* Tarjeta de Testimonio 3 */}
               <Col xs={12} md={6} lg={4} className="mb-4">
-                <Card className="h-100 tarjeta-testimonio">
+                <Card className={styles.cardTestimony}>
                   <Card.Body>
-                    <Card.Text>
+                    <Card.Text className={styles.textCustomers}>
                       "El camino hacia la libertad parecía desalentador, pero
                       con la guía de Hascunde, he construido relaciones más
                       fuertes y he logrado metas que creía imposibles."
                     </Card.Text>
-                  </Card.Body>
-                  <Card.Footer className="d-flex align-items-center">
-                    {/* REEMPLAZA ESTA RUTA CON LA RUTA REAL DE TU IMAGEN */}
-                    <Image
-                      src={Chris}
-                      alt="Chris P."
-                      roundedCircle
-                      className="Chris-testimonio"
-                    />
-                    <div className="ms-3">
-                      <h6 className="mb-0">Chris P.</h6>
-                      <small className="text-muted">Project Manager</small>
+                    <div className={styles.infoCustomers}>
+                      <Image
+                        src={Chris}
+                        alt="Chris P."
+                        roundedCircle
+                        className={styles.imgCustomers}
+                      />
+                      <div className="ms-3">
+                        <h6 className="mb-0">Chris P.</h6>
+                        <small className="text-muted">Project Manager</small>
+                      </div>
                     </div>
-                  </Card.Footer>
+                  </Card.Body>
                 </Card>
               </Col>
             </Row>
           </Row>
         </Container>
 
-        <Container>
-          <Row>
-            <Container>
-              <h2 className={styles.titleCards}>
-                El Camino a la Transformación de tu Liderazgo
-              </h2>
-              <Row className="justify-content-center">
-                {/* Tarjeta 1: Descubrimiento */}
-                <Col xs={12} md={6} lg={3} className="mb-4">
-                  <Card>
-                    <Card.Body className="text-center d-flex flex-column align-items-center">
-                      <div className="numero-icono-tarjeta d-flex align-items-center justify-content-center mb-3">
-                        <span className="numero">1</span>
-                        <BsCalendarCheck className="ms-2 icono-tarjeta" />{" "}
-                        {/* Icono de Calendario */}
+        <div className={styles.leadershipTransformationSection}>
+          <Container>
+            <h2 className={styles.titleCards1}>
+              El Camino a la Transformación de tu Liderazgo
+            </h2>
+            <Row className="justify-content-center">
+              {/* Tarjeta 1: Descubrimiento */}
+              <Col xs={12} md={6} lg={3} className="mb-4">
+                <Card className={styles.transformationCard}>
+                  <Card.Body className={styles.cardBodyContent}>
+                    
+                    <div className={styles.bodyNumberTitle}>
+                      <span className={styles.cardNumberCircle}>1</span>
+                    
+                      <div className={styles.titleIcon}>
+                        <img src={iconoCalendar} alt="Icono Calendario " className={styles.cardIcon} />
+                        <Card.Title className={styles.cardTitle}>
+                          Descubrimiento
+                        </Card.Title>
                       </div>
-                      <Card.Title className="titulo-tarjeta-liderazgo">
-                        Descubrimiento
-                      </Card.Title>
-                      <Card.Text>
+                      
+                    </div>
+                    <Card.Text className={styles.cardDescription}>
                         Comience con una evaluación integral para identificar
                         sus desafíos y aspiraciones actuales.
                       </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </Col>
+                  </Card.Body>
+                </Card>
+              </Col>
 
-                {/* Tarjeta 2: Cimientos Fuertes */}
-                <Col xs={12} md={6} lg={3} className="mb-4">
-                  <Card className="h-100 tarjeta-liderazgo">
-                    <Card.Body className="text-center d-flex flex-column align-items-center">
-                      <div className="numero-icono-tarjeta d-flex align-items-center justify-content-center mb-3">
-                        <span className="numero">2</span>
-                        <BsBuilding className="ms-2 icono-tarjeta" />{" "}
-                        {/* Icono de Edificio/Cimientos */}
+              {/* Tarjeta 2: Cimientos Fuertes */}
+              <Col xs={12} md={6} lg={3} className="mb-4">
+                <Card className={styles.transformationCard}>
+                  <Card.Body className={styles.cardBodyContent}>
+                    
+                    <div className={styles.bodyNumberTitle}>
+                      <span className={styles.cardNumberCircle}>2</span>
+                    
+                      <div className={styles.titleIcon}>
+                        <img src={iconoFlag} alt="Icono Flag " className={styles.cardIcon} />
+                        <Card.Title className={styles.cardTitle}>
+                          Cimientos Fuertes
+                        </Card.Title>
                       </div>
-                      <Card.Title className="titulo-tarjeta-liderazgo">
-                        Cimientos Fuertes
-                      </Card.Title>
-                      <Card.Text>
-                        Establecer hábitos y principios fundamentales para la
-                        claridad mental y la estabilidad emocional.
+                      
+                    </div>
+                    <Card.Text className={styles.cardDescription}>
+                        Establecer hábitos y principios fundamentales para la claridad mental y la estabilidad emocional.
                       </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </Col>
+                  </Card.Body>
+                </Card>
+              </Col>
 
-                {/* Tarjeta 3: Estrategias */}
-                <Col xs={12} md={6} lg={3} className="mb-4">
-                  <Card className="h-100 tarjeta-liderazgo">
-                    <Card.Body className="text-center d-flex flex-column align-items-center">
-                      <div className="numero-icono-tarjeta d-flex align-items-center justify-content-center mb-3">
-                        <span className="numero">3</span>
-                        <BsStars className="ms-2 icono-tarjeta" />{" "}
-                        {/* Icono de Estrella/Brillo */}
+              {/* Tarjeta 3: Estrategias */}
+             <Col xs={12} md={6} lg={3} className="mb-4">
+                <Card className={styles.transformationCard}>
+                  <Card.Body className={styles.cardBodyContent}>
+                    
+                    <div className={styles.bodyNumberTitle}>
+                      <span className={styles.cardNumberCircle}>3</span>
+                    
+                      <div className={styles.titleIcon}>
+                        <img src={iconoStar} alt="Icono Star " className={styles.cardIcon} />
+                        <Card.Title className={styles.cardTitle}>
+                          Estrategias
+                        </Card.Title>
                       </div>
-                      <Card.Title className="titulo-tarjeta-liderazgo">
-                        Estrategias
-                      </Card.Title>
-                      <Card.Text>
-                        Implementar estrategias avanzadas para la gestión del
-                        tiempo, la dinámica de las relaciones y el crecimiento
-                        profesional.
+                      
+                    </div>
+                    <Card.Text className={styles.cardDescription}>
+                        Implementar estrategias avanzadas para la gestión del tiempo, la dinámica de las relaciones y el crecimiento profesional.
                       </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </Col>
+                  </Card.Body>
+                </Card>
+              </Col>
 
-                {/* Tarjeta 4: Libertad */}
-                <Col xs={12} md={6} lg={3} className="mb-4">
-                  <Card className="h-100 tarjeta-liderazgo">
-                    <Card.Body className="text-center d-flex flex-column align-items-center">
-                      <div className="numero-icono-tarjeta d-flex align-items-center justify-content-center mb-3">
-                        <span className="numero">4</span>
-                        <BsGlobe2 className="ms-2 icono-tarjeta" />{" "}
-                        {/* Icono de Globo/Mundo */}
+              
+              {/* Tarjeta 4: Libertad */}
+              <Col xs={12} md={6} lg={3} className="mb-4">
+                <Card className={styles.transformationCard}>
+                  <Card.Body className={styles.cardBodyContent}>
+                    
+                    <div className={styles.bodyNumberTitle}>
+                      <span className={styles.cardNumberCircle}>4</span>
+                    
+                      <div className={styles.titleIcon}>
+                        <img src={iconoHands} alt="Icono Hands " className={styles.cardIcon} />
+                        <Card.Title className={styles.cardTitle}>
+                          Libertad
+                        </Card.Title>
                       </div>
-                      <Card.Title className="titulo-tarjeta-liderazgo">
-                        Libertad
-                      </Card.Title>
-                      <Card.Text>
-                        Consolida tu transformación, viviendo una vida
-                        equilibrada con propósito y profunda libertad.
+                      
+                    </div>
+                    <Card.Text className={styles.cardDescription}>
+                        Consolida tu transformación, viviendo una vida equilibrada con propósito y profunda libertad.
                       </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </Col>
-              </Row>
-            </Container>
-          </Row>
-        </Container>
+                  </Card.Body>
+                </Card>
+              </Col>
 
-        <Container>
+              
+            </Row>
+          </Container>
+        </div>
+
+        <Container className={styles.transformationContainer}>
           <Row>
             <Col xs={12} md={12}>
-              <h2 className="text-center mb-5">
+              <h2 className={styles.transformationTitle}>
                 ¿Estás listo para comenzar tu transformación?
               </h2>
-              <p className="text-center mb-5">
+              <p className={styles.transformationText}>
                 Da el primer paso hacia una vida de equilibrio, libertad y un
                 propósito
                 <br />
@@ -394,7 +387,10 @@ export const OurMission = () => {
                 <br />
                 ayudarte en tu camino.
               </p>
-              <Button>Connect with Hascunde</Button>
+
+              <Button variant="secondary" className={styles.hascundeButton}>
+                Conéctate con Hascunde
+              </Button>
             </Col>
           </Row>
         </Container>
