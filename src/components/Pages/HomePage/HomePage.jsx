@@ -5,7 +5,7 @@ import { Row, Col, Container } from 'react-bootstrap';
 import front from '../../../assets/images/hascundeBlur.webp';
 import { HomeCards } from '../../HomeCards/HomeCards';
 import { HelpYouCard } from '../../HelpYouCard/HelpYouCard';
-import { Button } from '../../Button/Button';
+import { GreenButton } from '../../GreenButton/GreenButton';
 
 export const HomePage = () => {
   return (
@@ -18,7 +18,7 @@ export const HomePage = () => {
             Familia, Tranquilidad, Bienestar y Consciencia para el Hombre Líder
             en busqueda de autoconocerse
           </p>
-          <Button text={'Begin Your Journey'} />
+          <GreenButton text={'Begin Your Journey'} />
         </div>
       </section>
 
@@ -143,18 +143,18 @@ export const HomePage = () => {
             <h4 className={styles.starText}>
               Samatha Tibetan Meditation Thangka
             </h4>
-            <Button text={'Discover Our Programs'} />
+            <GreenButton text={'Discover Our Programs'} />
           </Col>
         </Row>
       </Container>
 
-      <Container>
+      <Container className={styles.brownWallContainer}>
         <Row>
           <Col xs={12} md={12} className={styles.brownWall}>
             <h2 className={styles.brownTitle}>
               Listo para forjar tu camino hacia el balance y la libertad?
             </h2>
-            <Button text={'Connect with Us Today'} />
+            <GreenButton text={'Connect with Us Today'} />
           </Col>
         </Row>
       </Container>

@@ -28,7 +28,7 @@ export const NavBar = () => {
           }
           onClick={() => setIsOpen(false)}
         >
-          Homepage
+          Inicio
         </NavLink>
         <NavLink
           to={'/AboutUs'}
@@ -37,7 +37,7 @@ export const NavBar = () => {
           }
           onClick={() => setIsOpen(false)}
         >
-          About Us
+          Acerca de nosotros
         </NavLink>
         <NavLink
           to={'/OurMission'}
@@ -46,7 +46,7 @@ export const NavBar = () => {
           }
           onClick={() => setIsOpen(false)}
         >
-          Our Mission
+          Nuestra misión
         </NavLink>
         <NavLink
           to={'/CoreValues'}
@@ -55,7 +55,7 @@ export const NavBar = () => {
           }
           onClick={() => setIsOpen(false)}
         >
-          Core Values
+          Valores clave
         </NavLink>
         <NavLink
           to={'/ContactUs'}
@@ -64,7 +64,7 @@ export const NavBar = () => {
           }
           onClick={() => setIsOpen(false)}
         >
-          Contact Us
+          Contáctanos
         </NavLink>
       </nav>
     </article>

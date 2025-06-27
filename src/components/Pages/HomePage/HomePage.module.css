@@ -176,15 +176,19 @@
   font-size: 1rem;
 }
 
-.brownWall {
-  width: 100%;
+.brownWallContainer {
+  max-width: 100%;
   margin-top: 3rem;
   height: 18rem;
   background-color: #6f6953;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+
+.brownWall {
+  width: 100%;
 }
 
 .brownTitle {
@@ -192,8 +196,4 @@
   font-weight: 700;
   font-size: 2.7rem;
   margin-bottom: 1rem;
-}
-
-/* --- Media Query para Móviles --- */
-@media (max-width: 768px) {
 }
