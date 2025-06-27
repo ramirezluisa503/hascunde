@@ -1,99 +1,62 @@
-.title {
-  font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  margin-left: auto;
-  margin-left: auto;
+.frontPage {
+  width: 100%;
+  height: 38rem;
+  background-image: url('../../../assets/images/coreValues.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlayBlur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(226, 221, 221, 0.4);
+  z-index: 1;
+}
+
+.frontContain {
+  width: 60rem;
+  position: absolute;
   text-align: center;
-}
-.mainParagraph2 {
-  color: #8c8d8b; /* El color gris claro del párrafo */
-  font-size: 1.3rem; /* Ajusta el tamaño según necesites */
-  line-height: 1.6; /* Mejora la legibilidad del párrafo */
-  text-align: center;
-  padding: auto;
-}
-.containerHowHelpYou{
-    max-width:80%;
-    margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-     border-radius: 10px;
-     padding: 1.5rem;
-     background-color: #fff;
-     box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.08);
-     margin-bottom: 2rem;
-     height: 300px;
-     width: 100%;
-     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
-     
-}
-.card:hover {
-    /* Nuevos estilos cuando el mouse está sobre la tarjeta */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombra más grande y/o oscura */
-    transform: translateY(-5px); /* Opcional: Levanta ligeramente la tarjeta */
+.frontTitle {
+  color: white;
+  font-weight: 700;
+  font-size: 4.1rem;
+  margin-bottom: 2rem;
 }
 
-
-.cardText{
-    color: #8c8d8b; /* Color de texto gris suave (equivalente a 'text-muted') */
-    line-height: 1.5; 
-    font-size: 0.95rem; 
-    text-align: left;
-    margin-bottom: 0;
-}
-.cardTitle {
-    font-weight: bold; 
-    color: #242524; 
-    margin-bottom: 0.5rem;
-    font-size: 1.25rem; 
-}
-.iconWrapper {
-    margin-bottom: 1rem; 
-    font-size: 8rem; 
-    display: flex; 
-    justify-content: center; /* Centra el ícono horizontalmente */
-    align-items: center; /* Centra el ícono verticalmente */
-    /* Circulo detras del icono */
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;  
-}
-.imgIcono{
-    width:56px ;
-    height:56px;
+.frontText {
+  color: white;
+  font-size: 1.4rem;
 }
 
-.buttonCards{
-  padding: 0.7rem 1.5rem; 
-  font-size: 1.1rem;
-  font-weight: 600;
-  border-radius: 8px;
-  background-color:#ffffff;
-  border-color: #7c9e85;
-  border-width: 1px;
-  border-style: solid;
-  color:#7c9e85;
-  width: auto;
-  height: auto;
-  opacity: 1;
-  display: inline-block; 
-  text-decoration: none;
-  text-align: center;
-  
-}
-
-.Row.g-4 { /* Si tu Row tiene la clase g-4 (gap) */
-  align-items: stretch; /* Esto hace que las columnas dentro de la fila se estiren para tener la misma altura */
-}
-
-.containerButton{
-    text-align: left;
-    margin-top: auto;
-    align-self: flex-start;
-    display: inline-block;
+.catContainer {
+  width: 100%;
+  height: 38rem;
+  background-image: url('../../../assets/images/cat.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }

@@ -4,6 +4,7 @@ import TeamMembers from '../../TeamMembers/TeamMembers';
 import { Row, Col, Container, Button, Card } from 'react-bootstrap';
 import Cafeteros from '../../../assets/images/CafeterosAboutUs.webp';
 import Autoconfianza from '../../../assets/images/AutoconfianzaAboutUs.webp';
+import { GreenButton } from '../../GreenButton/GreenButton';
 
 export const AboutUs = () => {
   return (
@@ -169,9 +170,7 @@ export const AboutUs = () => {
               el crecimiento. Únete a una hermandad de hombres que forjan
               caminos más sólidos.
             </p>
-            <Button variant="secondary" className={styles.hascundeButton}>
-              Contáctanos Hoy
-            </Button>
+            <GreenButton text={'Connect With Us Today'} />
           </Col>
         </Row>
       </Container>
