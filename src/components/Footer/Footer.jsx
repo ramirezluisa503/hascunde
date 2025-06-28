@@ -14,10 +14,10 @@ export const Footer = () => {
             <Logo />
           </div>
           <div className={styles.subscriptionSection}>
-            <h3>Subscribe to our newsletter</h3>
+            <h3>Inscríbete a nuestro boletín</h3>
             <div className={styles.emailContainer}>
-              <input type="email" placeholder="Enter your email" />
-              <button>Subscribe</button>
+              <input type="email" placeholder="Escribe tu correo" />
+              <button>Suscribirse</button>
             </div>
           </div>
         </div>

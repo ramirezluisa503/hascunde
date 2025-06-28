@@ -4,6 +4,7 @@ import styles from './ContactUs.module.css';
 export const ContactUs = () => {
   return (
     <Layout>
+      
       <section className={styles.frontPage}>
         <div className={styles.overlayBlur}></div>
         <div className={styles.frontContain}>

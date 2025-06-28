@@ -18,7 +18,7 @@ export const HomePage = () => {
             Familia, Tranquilidad, Bienestar y Consciencia para el Hombre Líder
             en busqueda de autoconocerse
           </p>
-          <GreenButton text={'Begin Your Journey'} />
+          <GreenButton text={'Comienza tu Viaje'} />
         </div>
       </section>
 
@@ -143,7 +143,7 @@ export const HomePage = () => {
             <h4 className={styles.starText}>
               Samatha Tibetan Meditation Thangka
             </h4>
-            <GreenButton text={'Discover Our Programs'} />
+            <GreenButton text={'Descubre Nuestros Programas'} />
           </Col>
         </Row>
       </Container>
@@ -154,7 +154,7 @@ export const HomePage = () => {
             <h2 className={styles.brownTitle}>
               Listo para forjar tu camino hacia el balance y la libertad?
             </h2>
-            <GreenButton text={'Connect with Us Today'} />
+            <GreenButton text={'Contáctanos hoy'} />
           </Col>
         </Row>
       </Container>

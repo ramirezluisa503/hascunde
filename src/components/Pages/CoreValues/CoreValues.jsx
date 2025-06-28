@@ -1,12 +1,20 @@
-import { Layout } from '../../Layout/Layout';
-import { Row, Col, Container, Button, Card } from 'react-bootstrap';
-import styles from './CoreValues.module.css';
-import { GreenButton } from '../../GreenButton/GreenButton';
+
+import { Layout } from "../../Layout/Layout";
+import { Row, Col, Container, Button, Card } from "react-bootstrap";
+import styles from "../CoreValues/CoreValues.module.css";
+import iconoUsers from "../../../assets/images/IconoUsers.webp";
+import iconoHeart from "../../../assets/images/IconoHeart.webp";
+import iconoBrainBig from "../../../assets/images/IconoBrainBig.webp";
+import iconoLeaf from "../../../assets/images/Iconoleaf.webp";
+import {GreenButton} from "../../GreenButton/GreenButton"
 
 export const CoreValues = () => {
   return (
     <Layout>
+      
       <section className={styles.frontPage}>
+        
+
         <div className={styles.overlayBlur}></div>
         <div className={styles.frontContain}>
           <h1 className={styles.frontTitle}>
@@ -17,104 +25,124 @@ export const CoreValues = () => {
             la adaptabilidad, guían a Hascunde en la capacitación de líderes..
           </p>
         </div>
+
       </section>
-      <Container>
-        <h2 className="text-center mb-5">Como podemos ayudarte</h2>
-        <p className="text-center mb-5">
-          El público objetivo de Hascunde incluye a líderes gerentes, CEOs y
-          emprendedores que buscan potenciar su liderazgo y tranquilidad, para
-          llevar a cabo los retos que su propósito le propone, desarrollando su
-          propio camino para lograrlo.{' '}
-        </p>
+      <Container className={styles.containerHowHelpYou}>
+        <Row>
+          <Col md={12}>
+            <h2 className={styles.title}>Como podemos ayudarte</h2>
+            <p className={styles.mainParagraph2}>
+              El público objetivo de Hascunde incluye a líderes gerentes, CEOs y
+              emprendedores que buscan potenciar su liderazgo y tranquilidad,
+              para llevar a cabo los retos que su propósito le propone,
+              desarrollando su propio camino para lograrlo.
+            </p>
+          </Col>
+        </Row>
       </Container>
       <Container>
         <Row>
-          <Container className="my-5">
-            <Row className="g-4">
-              {' '}
-              {/* g-4 adds gutter space between columns */}
-              {/* Card 1: Mentoring */}
-              <Col xs={12} md={6}>
-                <Card className="h-100 shadow-sm rounded">
-                  <Card.Body className="d-flex flex-column align-items-center text-center p-4">
-                    <Card.Title as="h5" className="fw-bold mb-3">
-                      Mentoring
-                    </Card.Title>
-                    <Card.Text className="text-muted flex-grow-1">
-                      El mentoring se basa en una relación de desarrollo en la
-                      que un mentor experimentado guía a un menos experimentado,
-                      transmitiendo conocimientos y experiencias para su
-                      crecimiento profesional y personal.
-                    </Card.Text>
-                    <Button variant="outline-success" className="mt-auto">
-                      Learn More
-                    </Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-              {/* Card 2: Coaching */}
-              <Col xs={12} md={6}>
-                <Card className="h-100 shadow-sm rounded">
-                  <Card.Body className="d-flex flex-column align-items-center text-center p-4">
-                    <Card.Title as="h5" className="fw-bold mb-3">
-                      Coaching
-                    </Card.Title>
-                    <Card.Text className="text-muted flex-grow-1">
-                      El coaching implica un proceso interactivo donde un coach
-                      ayuda a un individuo a alcanzar objetivos específicos
-                      mediante preguntas, retroalimentación y estrategias
-                      efectivas, potenciando su rendimiento.
-                    </Card.Text>
-                    <Button variant="outline-success" className="mt-auto">
-                      Learn More
-                    </Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-              {/* Card 3: Consultoría */}
-              <Col xs={12} md={6}>
-                <Card className="h-100 shadow-sm rounded">
-                  <Card.Body className="d-flex flex-column align-items-center text-center p-4">
-                    <Card.Title as="h5" className="fw-bold mb-3">
-                      Consultoría
-                    </Card.Title>
-                    <Card.Text className="text-muted flex-grow-1">
-                      La consultoría se refiere a la asesoría profesional
-                      brindada por consultores, que analizan problemas
-                      específicos de una organización y proporcionan soluciones
-                      estratégicas personalizadas.
-                    </Card.Text>
-                    <Button variant="outline-success" className="mt-auto">
-                      Learn More
-                    </Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-              {/* Card 4: Transformación Digital */}
-              <Col xs={12} md={6}>
-                <Card className="h-100 shadow-sm rounded">
-                  <Card.Body className="d-flex flex-column align-items-center text-center p-4">
-                    <Card.Title as="h5" className="fw-bold mb-3">
-                      Transformación Digital
-                    </Card.Title>
-                    <Card.Text className="text-muted flex-grow-1">
-                      Se define como la adopción y adaptación de tecnologías
-                      digitales para transformar los procesos de negocio, los
-                      modelos de negocio y la experiencia del cliente.
-                    </Card.Text>
-                    <Button variant="outline-success" className="mt-auto">
-                      Learn More
-                    </Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
+          <Col xs={12}  md={6}>
+            {/* Tarjeta  1 */}
+            <Card className={styles.card}>
+              <div className={styles.iconWrapper}>
+                <img
+                  src={iconoUsers}
+                  alt="Icono Usuarios"
+                  className={styles.imgIcono}
+                />
+              </div>
+              <Card.Title className={styles.cardTitle}>
+                Enfoque y manejo del tiempo
+              </Card.Title>
+              <Card.Text className={styles.cardText}>
+                Maximizaremos el tiempo de tu día a día, con herramientas
+                tecnológicas que abrirán espacios en tu agenda, para que los
+                uses en tus prioridades.
+              </Card.Text>
+              <div className={styles.containerButton}>
+                <Button className={styles.buttonCards} variant="light">
+                  Aprender Más
+                </Button>
+              </div>
+            </Card>
+            {/* Tarjeta 2  */}
+            <Card className={styles.card}>
+              <div className={styles.iconWrapper}>
+                <img
+                  src={iconoLeaf}
+                  alt="Icono Hoja"
+                  className={styles.imgIcono}
+                />
+              </div>
+              <Card.Title className={styles.cardTitle}>Consultoría</Card.Title>
+              <Card.Text className={styles.cardText}>
+                La consultoría se refiere a la asesoría profesional brindada por
+                consultores, que analizan problemas específicos de una
+                organización y proporcionan soluciones estratégicas
+                personalizadas.
+              </Card.Text>
+              <div className={styles.containerButton}>
+                <Button className={styles.buttonCards} variant="light">
+                  Aprender Más
+                </Button>
+              </div>
+            </Card>
+          </Col>
+          <Col xs={12}  md={6}>
+            {/* Tarjeta 3 */}
+            <Card className={styles.card}>
+              <div className={styles.iconWrapper}>
+                <img
+                  src={iconoHeart}
+                  alt="Icono Heart"
+                  className={styles.imgIcono}
+                />
+              </div>
+              <Card.Title className={styles.cardTitle}>Coaching</Card.Title>
+              <Card.Text className={styles.cardText}>
+                El coaching implica un proceso interactivo donde un coach ayuda
+                a un individuo a alcanzar objetivos específicos mediante
+                preguntas, retroalimentación y estrategias efectivas,
+                potenciando su rendimiento.
+              </Card.Text>
+              <div className={styles.containerButton}>
+                <Button className={styles.buttonCards} variant="light">
+                  Aprender Más
+                </Button>
+              </div>
+            </Card>
+
+            {/* Tarjeta 4 */}
+            <Card className={styles.card}>
+              <div className={styles.iconWrapper}>
+                <img
+                  src={iconoBrainBig}
+                  alt="Icono Brain"
+                  className={styles.imgIcono}
+                />
+              </div>
+              <Card.Title className={styles.cardTitle}>
+                Transformación Digital
+              </Card.Title>
+              <Card.Text className={styles.cardText}>
+                Se define como la adopción y adaptación de tecnologías digitales
+                para transformar los procesos de negocio, los modelos de negocio
+                y la experiencia del cliente.
+              </Card.Text>
+              <div className={styles.containerButton}>
+                <Button className={styles.buttonCards} variant="light">
+                  Aprender Más
+                </Button>
+              </div>
+            </Card>
+          </Col>
         </Row>
       </Container>
 
-      <Container>
+       <Container>
         <Row>
+          <Col xs={12} md={12}>
           <section className={styles.catContainer}>
             <div className={styles.frontContain}>
               <h1 className={styles.frontTitle}>Descubre tu Animal Sagrado</h1>
@@ -123,9 +151,10 @@ export const CoreValues = () => {
                 personal que puede enriquecer tu vida y darte una mayor conexión
                 con la naturaleza y contigo mismo
               </p>
-              <GreenButton text={'Connect With Us'} />
+              <GreenButton text={'Conéctate con nosotros'} />
             </div>
           </section>
+          </Col>
         </Row>
       </Container>
     </Layout>

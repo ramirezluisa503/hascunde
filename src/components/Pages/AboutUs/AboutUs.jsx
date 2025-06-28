@@ -170,7 +170,7 @@ export const AboutUs = () => {
               el crecimiento. Únete a una hermandad de hombres que forjan
               caminos más sólidos.
             </p>
-            <GreenButton text={'Connect With Us Today'} />
+            <GreenButton text={'Contáctanos hoy'} />
           </Col>
         </Row>
       </Container>
