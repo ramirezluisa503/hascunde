@@ -1,0 +1,71 @@
+.card {
+  height: 100%; /* Asegura que todas las cards tengan la misma altura si están en la misma fila */
+  border-radius: 10px;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  /* Nuevos estilos cuando el mouse está sobre la tarjeta */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombra más grande y/o oscura */
+  transform: translateY(-5px); /* Opcional: Levanta ligeramente la tarjeta */
+}
+
+.cardText {
+  color: #8c8d8b; /* Color de texto gris suave (equivalente a 'text-muted') */
+  line-height: 1.5;
+  font-size: 1rem;
+  text-align: left;
+  padding-bottom: 1rem;
+}
+
+.cardTitle {
+  font-weight: bold;
+  color: #242524;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.iconWrapper {
+  margin-bottom: 1rem;
+  color: #6f6953;
+  border-radius: 50px;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center; /* Centra el ícono horizontalmente */
+  align-items: center; /* Centra el ícono verticalmente */
+  /* Circulo detras del icono */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.image {
+  width: 3.5rem;
+}
+
+@media (max-width: 768px) {
+  .card {
+    height: 100%; /* Asegura que todas las cards tengan la misma altura si están en la misma fila */
+    border-radius: 10px;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  .cardText {
+    color: #8c8d8b; /* Color de texto gris suave (equivalente a 'text-muted') */
+    line-height: 1.5;
+    font-size: 1rem;
+    text-align: left;
+    padding-bottom: 1rem;
+  }
+
+  .contentButton {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,3 +1,11 @@
+.mainContainer {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .frontPage {
   width: 100%;
   height: 45rem;
@@ -94,21 +102,21 @@
 
 .paragraph {
   font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 4rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
   text-align: left;
 }
 
 .hascundeImage {
-  object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
-  height: 100%; /* Asegura que la imagen ocupe la altura disponible en la columna */
-  max-height: 350px; /* Limita la altura máxima de la imagen para que no sea demasiado grande */
-  width: 100%; /* Asegura que la imagen ocupe todo el ancho de su columna */
-  display: block; /* Elimina espacio extra que algunos navegadores añaden a las imágenes */
-  margin: 80px auto 0 auto; /* Centrar la imagen en la columna cuando no es de ancho completo */
+  object-fit: cover;
+  height: 100%;
+  max-height: 350px;
+  width: 100%;
+  display: block;
 }
+
 .powerImage {
-  border-radius: 0 8px 8px 0; /* Bordes ligeramente redondeados */
+  border-radius: 8px; /* Bordes ligeramente redondeados */
   object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
   max-height: 300px; /* Altura automática para mantener la proporción */
   display: block;
@@ -116,12 +124,8 @@
   margin: 0 auto;
 }
 
-.imageColum {
-  padding-left: 2rem;
-}
-
 .hascundeButton {
-  padding: 0.5rem 1rem; /* Más relleno para un botón más grande */
+  padding: 0.5rem 1rem;
   font-size: 1.1rem;
   font-weight: 600;
   border-radius: 5px;
@@ -142,13 +146,10 @@
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 .cards:hover {
-    /* Nuevos estilos cuando el mouse está sobre la tarjeta */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombra más grande y/o oscura */
-    transform: translateY(-5px); /* Opcional: Levanta ligeramente la tarjeta */
+  /* Nuevos estilos cuando el mouse está sobre la tarjeta */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombra más grande y/o oscura */
+  transform: translateY(-5px); /* Opcional: Levanta ligeramente la tarjeta */
 }
-
-
-
 
 .cardsH3 {
   font-size: 1.25rem;
@@ -183,8 +184,8 @@
   color: #8c8d8b;
   text-align: center;
   max-width: 700px;
-  margin: 0 auto 3rem auto;
 }
+
 .legacyContainer {
   background-color: #6f6953;
   padding: 40px 20px;
@@ -210,22 +211,26 @@
 
 @media (max-width: 768px) {
   /* desde aqui */
+  .mainContainer {
+    padding: 0;
+    margin: 0;
+  }
+
   .frontPage {
-    height: 30rem; /* Ajusta la altura en móviles */
+    height: 30rem;
   }
 
   .frontContain {
-    width: 90%; /* Más ancho en móviles */
-    /* height: auto; ya que es absolute, puedes gestionarlo por el contenido */
-    padding: 1rem; /* Ajusta el padding */
+    width: 90%;
+    padding: 1rem;
   }
 
   .frontTitle {
-    font-size: 2.5rem; /* Tamaño de fuente más pequeño */
+    font-size: 2.5rem;
   }
 
   .frontText {
-    font-size: 1rem; /* Tamaño de fuente más pequeño */
+    font-size: 1rem;
   }
 
   .frontButton {
@@ -253,7 +258,6 @@
     display: flex;
   }
 
-  /* Puedes ajustar el padding del Container si las tarjetas están muy pegadas a los lados del móvil */
   .container.my-5 {
     padding-left: 1rem;
     padding-right: 1rem;
