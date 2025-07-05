@@ -1,5 +1,5 @@
 .frontPage {
-  width: 100%;
+  max-width: 100%;
   height: 45rem;
   background-image: url('../../../assets/images/homePage.webp');
   background-size: cover;
@@ -40,7 +40,7 @@
 .blurImage {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   position: absolute;
   top: 0;
   left: 0;
@@ -48,8 +48,9 @@
 }
 
 .leftColumn {
-  padding-right: 2rem; /* Espacio entre las columnas en pantallas más grandes */
+  padding-right: 2rem;
 }
+
 .lineContainer {
   display: flex;
   justify-content: flex-start;
@@ -58,33 +59,33 @@
 }
 
 .mainTitle {
-  color: #7c9e85; /* El color verde del título */
-  font-size: 3rem; /* Ajusta el tamaño según necesites */
+  color: #7c9e85;
+  font-size: 3rem;
   font-weight: bold;
   margin-left: 1rem;
 }
 
 .verticalLine {
-  border-left: 4px solid #7c9e85; /* Línea vertical verde */
-  height: 150px; /* Ajusta la altura según necesites */
-  margin-right: 2rem; /* Alinea al inicio de la columna */
+  border-left: 4px solid #7c9e85;
+  height: 150px;
+  margin-right: 2rem;
 }
 
 .secondaryText {
-  color: #242524; /* Color del texto secundario (gris oscuro) */
-  font-size: 1.4rem; /* Ajusta el tamaño según necesites */
+  color: #242524;
+  font-size: 1.4rem;
   font-weight: 700;
   font-style: italic;
 }
 
 .rightColumn {
-  padding-left: 2rem; /* Espacio entre las columnas en pantallas más grandes */
+  padding-left: 2rem;
 }
 
 .mainParagraph {
-  color: #8c8d8b; /* El color gris claro del párrafo */
-  font-size: 1.5rem; /* Ajusta el tamaño según necesites */
-  line-height: 1.6; /* Mejora la legibilidad del párrafo */
+  color: #8c8d8b;
+  font-size: 1.5rem;
+  line-height: 1.6;
 }
 
 .title {
@@ -94,62 +95,10 @@
 }
 
 .mainParagraph2 {
-  color: #8c8d8b; /* El color gris claro del párrafo */
-  font-size: 1.5rem; /* Ajusta el tamaño según necesites */
-  line-height: 1.6; /* Mejora la legibilidad del párrafo */
+  color: #8c8d8b;
+  font-size: 1.5rem;
+  line-height: 1.6;
   text-align: center;
-}
-
-@media (max-width: 768px) {
-  /* desde aqui */
-  .frontPage {
-    height: 30rem; /* Ajusta la altura en móviles */
-  }
-
-  .frontContain {
-    width: 90%; /* Más ancho en móviles */
-    /* height: auto; ya que es absolute, puedes gestionarlo por el contenido */
-    padding: 1rem; /* Ajusta el padding */
-  }
-
-  .frontTitle {
-    font-size: 2.5rem; /* Tamaño de fuente más pequeño */
-  }
-
-  .frontText {
-    font-size: 1rem; /* Tamaño de fuente más pequeño */
-  }
-
-  .frontButton {
-    width: auto;
-    padding: 0.7rem 1.5rem;
-    font-size: 1rem;
-  }
-
-  /* hasta aqui */
-
-  .leftColumn {
-    padding-right: 0;
-    margin-bottom: 2rem;
-  }
-
-  .rightColumn {
-    padding-left: 0;
-  }
-
-  .mainTitle {
-    font-size: 2rem;
-  }
-
-  .verticalLine {
-    display: flex;
-  }
-
-  /* Puedes ajustar el padding del Container si las tarjetas están muy pegadas a los lados del móvil */
-  .container.my-5 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
 }
 
 .greenTitle {
@@ -196,4 +145,99 @@
   font-weight: 700;
   font-size: 2.7rem;
   margin-bottom: 1rem;
+}
+
+.frontTitle {
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .frontPage {
+    height: 30rem;
+    max-width: 100%;
+  }
+
+  .frontContain {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .blurImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .frontTitle {
+    font-size: 2.4rem;
+  }
+
+  .frontText {
+    font-size: 1rem;
+  }
+
+  .greenTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #7c9e85;
+  }
+
+  .frontButton {
+    width: auto;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .leftColumn {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .rightColumn {
+    padding-left: 0;
+  }
+
+  .mainTitle {
+    font-size: 2rem;
+  }
+
+  .verticalLine {
+    display: flex;
+  }
+
+  .container.my-5 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .mainParagraph {
+    color: #8c8d8b;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+  }
+
+  .mainParagraph2 {
+    color: #8c8d8b;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  .brownTitle {
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
 }

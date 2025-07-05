@@ -1,3 +1,5 @@
+import React from 'react';
+import { useTranslation } from 'react-i18next'; // Importamos useTranslation
 import styles from './NavBar.module.css';
 import { Logo } from '../Logo/Logo';
 import { NavLink } from 'react-router-dom';
@@ -5,6 +7,7 @@ import { useState } from 'react';
 
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation(); // Inicializamos la función de traducción 't'
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -28,7 +31,7 @@ export const NavBar = () => {
           }
           onClick={() => setIsOpen(false)}
         >
-          Inicio
+          {t('nav_home')}
         </NavLink>
         <NavLink
           to={'/AboutUs'}
@@ -37,7 +40,7 @@ export const NavBar = () => {
           }
           onClick={() => setIsOpen(false)}
         >
-          Acerca de nosotros
+          {t('nav_about_us')}
         </NavLink>
         <NavLink
           to={'/OurMission'}
@@ -46,7 +49,7 @@ export const NavBar = () => {
           }
           onClick={() => setIsOpen(false)}
         >
-          Nuestra misión
+          {t('nav_our_mission')}
         </NavLink>
         <NavLink
           to={'/CoreValues'}
@@ -55,7 +58,7 @@ export const NavBar = () => {
           }
           onClick={() => setIsOpen(false)}
         >
-          Valores clave
+          {t('nav_core_values')}
         </NavLink>
         <NavLink
           to={'/ContactUs'}
@@ -64,7 +67,7 @@ export const NavBar = () => {
           }
           onClick={() => setIsOpen(false)}
         >
-          Contáctanos
+          {t('nav_contact_us')}
         </NavLink>
       </nav>
     </article>

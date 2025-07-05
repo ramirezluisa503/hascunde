@@ -221,30 +221,68 @@
   font-size: 0.95rem;
 }
 
-/* Responsive Design */
-/* @media (max-width: 991.98px) {
-  .contactColumn,
-  .faqColumn {
-    padding-right: 15px;
-    padding-left: 15px;
+/* Desktop */
+@media (max-width: 1200px) {
+  .frontContain {
+    width: 90%;
+    max-width: 65rem;
+  }
+
+  .contactContainer {
+    width: 90%;
+    justify-self: center;
+  }
+
+  .contactContain {
+    width: 100%;
+    max-width: 65rem;
+  }
+
+  .frontTitle {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .frontPage {
+    height: 30rem;
+  }
+
+  .frontTitle {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .frontText {
+    font-size: 1rem;
+  }
+
+  .contactContainer {
+    flex-direction: column;
+    gap: 0.9rem;
+    align-items: center;
+  }
+
+  .iconContainer {
+    text-align: center;
+    gap: 0.2rem;
+  }
+
+  .iconContainer p {
+    font-size: 0.9rem;
+  }
+
+  .contactFaqSection {
+    padding: 40px 0;
   }
 
   .contactColumn {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    padding-left: 3rem;
   }
 
   .sectionTitle {
-    font-size: 2rem;
-  }
-} */
-
-@media (max-width: 768px) {
-  .contactFaqSection {
-    padding: 60px 0;
-  }
-
-  .sectionTitle {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
     margin-bottom: 1.5rem;
   }
 
@@ -254,24 +292,10 @@
 
   .accordionHeader button {
     font-size: 0.95rem;
+    padding: 0.8rem 1rem;
   }
-}
 
-/* Custom scrollbar for textarea */
-.formTextarea::-webkit-scrollbar {
-  width: 8px;
-}
-
-.formTextarea::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 4px;
-}
-
-.formTextarea::-webkit-scrollbar-thumb {
-  background: #c1c1c1;
-  border-radius: 4px;
-}
-
-.formTextarea::-webkit-scrollbar-thumb:hover {
-  background: #a1a1a1;
+  .accordionBody {
+    padding: 0.8rem 1rem;
+  }
 }

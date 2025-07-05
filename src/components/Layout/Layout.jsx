@@ -8,7 +8,7 @@ export const Layout = ({ children }) => {
   return (
     <div className={styles.principal}>
       <NavBar />
-      {children}
+      <main className={styles.content}>{children}</main>
       <Footer />
     </div>
   );
