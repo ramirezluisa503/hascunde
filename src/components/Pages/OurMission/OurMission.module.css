@@ -1,148 +1,140 @@
 .OurMissionButton {
-  padding: 0.5rem 1rem; 
+  padding: 0.5rem 1rem;
   font-size: 1.1rem;
   font-weight: 600;
   border-radius: 5px;
-  background-color:#7c9e85;
+  background-color: #7c9e85;
   border-color: #7c9e85;
-  color:#ffffff;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
- .container1 {
-    padding-top: 3rem; 
-    padding-bottom: 3rem;
-    margin-top: 0%;
-    margin-bottom: 0rem;
+.container1 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-top: 0%;
+  margin-bottom: 0rem;
 }
-.containerCards{
-    padding-left: 15px; 
-    padding-right: 15px;
-    display: flex;
-    align-items: stretch;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 1rem auto 4rem auto;
-    
-    
+.containerCards {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 1rem auto 4rem auto;
 }
 
-
-
-
-
-.imgCustomers{
-border-radius: 50px;
-width: 40px;
-height: 40px;
+.imgCustomers {
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
 }
-.textCustomers{
+.textCustomers {
   font-size: 1.1em;
   color: #242524;
   line-height: 1.6;
   margin-bottom: 25px;
   font-style: italic;
 }
-.infoCustomers{
-    display: flex;
-    align-items: center;
-    margin-top: auto;
-    margin-bottom: auto;
-
+.infoCustomers {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
-.row1{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .contentCol {
-    margin-bottom: 1.5rem; 
-    padding-right: 15px; 
-    padding-left: 15px;
+  margin-bottom: 1.5rem;
+  padding-right: 15px;
+  padding-left: 2rem;
 }
 .title {
-    font-weight: bold;
-    color: #333;
-    font-size: clamp(2rem, 5vw, 3rem);
-    line-height: 1.2;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    padding-right: 2rem;
+  font-weight: bold;
+  color: #333;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  padding-right: 2rem;
 }
-.titleUpCard{
-    font-weight: bold; /* Título en negrita */
-    color: #242524; /* Color de texto oscuro */
-    text-align: center; 
-    margin-bottom: 3rem; 
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
+.titleUpCard {
+  font-weight: bold; /* Título en negrita */
+  color: #242524; /* Color de texto oscuro */
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
 }
-.titleCards{
-    font-weight: bold; /* Título en negrita */
-    color: #242524; /* Color de texto oscuro */
-    text-align: center; 
-    margin-bottom: 2rem; 
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
+.titleCards {
+  font-weight: bold; /* Título en negrita */
+  color: #242524; /* Color de texto oscuro */
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
 }
 .description {
-    line-height: 1.6;
-    font-size: clamp(0.9rem, 2vw, 1.1rem);
-    color: #8c8d8b;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-    padding-right: 2rem;
+  line-height: 1.6;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  color: #8c8d8b;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  padding-right: 2rem;
 }
 .image1 {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 2rem;
-    padding-right: 2rem;;
+  max-width: 100%;
+  height: 7%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .card {
-    height: 100%; /* Asegura que todas las cards tengan la misma altura si están en la misma fila */
-    border-radius: 10px; 
-    padding: 1.5rem; 
-    background-color: #fff; 
-    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.08); 
-    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  height: 100%; /* Asegura que todas las cards tengan la misma altura si están en la misma fila */
+  border-radius: 10px;
+  padding: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 .card:hover {
-    /* Nuevos estilos cuando el mouse está sobre la tarjeta */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombra más grande y/o oscura */
-    transform: translateY(-5px); /* Opcional: Levanta ligeramente la tarjeta */
+  /* Nuevos estilos cuando el mouse está sobre la tarjeta */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombra más grande y/o oscura */
+  transform: translateY(-5px); /* Opcional: Levanta ligeramente la tarjeta */
 }
 
-.cardText{
-    color: #8c8d8b; /* Color de texto gris suave (equivalente a 'text-muted') */
-    line-height: 1.5; 
-    font-size: 0.95rem; 
-    text-align: left;
+.cardText {
+  color: #8c8d8b; /* Color de texto gris suave (equivalente a 'text-muted') */
+  line-height: 1.5;
+  font-size: 0.95rem;
+  text-align: left;
 }
 .cardTitle {
-    font-weight: bold; 
-    color: #242524; 
-    margin-bottom: 0.5rem;
-    font-size: 1.25rem; 
+  font-weight: bold;
+  color: #242524;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
 }
 
 .iconWrapper {
-    margin-bottom: 1rem; 
-    color: #6f6953; 
-    background-color: #f0f0ed;
-    border-radius: 50px;
-    font-size: 2.5rem; 
-    display: flex;
-    justify-content: center; /* Centra el ícono horizontalmente */
-    align-items: center; /* Centra el ícono verticalmente */
-    /* Circulo detras del icono */
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #f7f7f7; 
-    
+  margin-bottom: 1rem;
+  color: #6f6953;
+  background-color: #f0f0ed;
+  border-radius: 50px;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center; /* Centra el ícono horizontalmente */
+  align-items: center; /* Centra el ícono verticalmente */
+  /* Circulo detras del icono */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f7f7f7;
 }
 
 .transformationContainer {
@@ -153,8 +145,8 @@ height: 40px;
   max-width: 2000px;
   min-height: 350px;
   margin: 80px auto;
-  border: 1px solid #EBEBEAFF;
-  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1F;
+  border: 1px solid #ebebeaff;
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
 }
 .transformationTitle {
   font-size: 2.5rem;
@@ -182,52 +174,48 @@ height: 40px;
   color: #ffffff;
 }
 
-
 .leadershipTransformationSection {
-  padding: 20px 0; 
+  padding: 20px 0;
 }
 
 /* Estilos para el título principal de la sección */
 .titleCards1 {
-  text-align: center; 
-  margin-bottom: 50px; 
-  font-size: 2.5rem; 
-  color: #242524; 
-  font-weight: 600; 
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  color: #242524;
+  font-weight: 600;
 }
 
 /* Estilos generales para cada tarjeta */
 .transformationCard {
-  border: 1px solid #ebebea; 
-  border-radius: 12px; 
-  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1F;  
+  border: 1px solid #ebebea;
+  border-radius: 12px;
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transición suave para el efecto hover */
-  background-color: #fff; 
+  background-color: #fff;
   height: 100%;
   display: flex;
   align-items: flex-start;
-  padding: 10px; 
-  margin-bottom: 10px; 
-
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .transformationCard:hover {
-    /* Nuevos estilos cuando el mouse está sobre la tarjeta */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombra más grande y/o oscura */
-    transform: translateY(-5px); /* Opcional: Levanta ligeramente la tarjeta */
+  /* Nuevos estilos cuando el mouse está sobre la tarjeta */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombra más grande y/o oscura */
+  transform: translateY(-5px); /* Opcional: Levanta ligeramente la tarjeta */
 }
 
-.cardTestimony{
+.cardTestimony {
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .cardTestimony:hover {
-    /* Nuevos estilos cuando el mouse está sobre la tarjeta */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombra más grande y/o oscura */
-    transform: translateY(-5px); /* Opcional: Levanta ligeramente la tarjeta */
+  /* Nuevos estilos cuando el mouse está sobre la tarjeta */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombra más grande y/o oscura */
+  transform: translateY(-5px); /* Opcional: Levanta ligeramente la tarjeta */
 }
-
-
 
 .cardNumberCircle {
   width: 50px;
@@ -239,20 +227,19 @@ height: 40px;
   align-items: center;
   font-weight: bold;
   font-size: 20px;
-  color: #6f6953; 
+  color: #6f6953;
   border: 1px solid #d6d5ce; /* Eliminar el borde que tenías si no es necesario */
   margin-right: 15px; /* <-- Espacio a la derecha para separar del contenido */
   flex-shrink: 0; /* <-- Evita que el número se encoja */
   margin-top: 5px; /* <-- Ajuste vertical para alinear con el icono/título */
-
 }
 
 /* Estilos para el icono (tu .icono-tarjeta) */
 .cardIcon {
   font-size: 1.5rem; /* Tamaño más grande para el icono */
-  color: #6f6953; /* Color del icono gris sutil */ 
+  color: #6f6953; /* Color del icono gris sutil */
 }
-.titleIcon{
+.titleIcon {
   display: flex; /* Habilita Flexbox para alinear los ítems en una fila */
   align-items: center; /* Centra verticalmente el icono y el título */
   gap: 8px;
@@ -276,47 +263,16 @@ height: 40px;
   text-align: left;
   margin-top: 0;
   margin-left: 70px;
-
 }
 
-
-
 .cardBodyContent {
-  padding: 0; 
+  padding: 0;
   flex-grow: 1; /* <-- Permite que Card.Body ocupe el espacio restante */
   display: flex;
   flex-direction: column; /* <-- Apila el icono/título y la descripción verticalmente */
   align-items: flex-start;
 }
 
-.bodyNumberTitle{
+.bodyNumberTitle {
   display: flex;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

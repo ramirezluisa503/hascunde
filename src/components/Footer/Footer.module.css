@@ -120,13 +120,11 @@
   border-color: #ebebea;
 }
 
-/* Copyright */
 .copyright {
   font-size: 14px;
   color: #666;
 }
 
-/* Social media icons */
 .socialMedia {
   display: flex;
   gap: 16px;

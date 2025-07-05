@@ -1,4 +1,4 @@
-import { Col } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import star from '../../assets/images/star.svg';
 import styles from './HelpYouCard.module.css';
 

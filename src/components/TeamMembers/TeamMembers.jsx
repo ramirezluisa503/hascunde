@@ -1,7 +1,6 @@
-import React from 'react';
 import { Container, Row, Col, Card, Image } from 'react-bootstrap';
-import styles from './TeamMembers.module.css'; 
-import elijahImage from "../../assets/images/EliajThorneAboutUs.webp";
+import styles from './TeamMembers.module.css';
+import elijahImage from '../../assets/images/EliajThorneAboutUs.webp';
 import marcusImage from '../../assets/images/MarcusStoneAboutUs.webp';
 import calebImage from '../../assets/images/CalebVanceAboutUs.webp';
 import liamImage from '../../assets/images/LiamHayesAboutUs.webp';
@@ -35,20 +34,24 @@ const teamMembers = [
 
 const TeamMembers = () => {
   return (
-    <Container className="my-5"> {/* my-5 para margen vertical */}
-      <Row className="justify-content-center g-4"> {/* g-4 para espaciado entre cards, justify-content-center para centrar las columnas */}
+    <Container className="my-5">
+      <Row className="justify-content-center g-4">
         {teamMembers.map((member) => (
           <Col
             key={member.id}
-            xs={12} 
-            sm={6}  
-            md={4}  
-            lg={3} 
-            className="d-flex justify-content-center" // Centra la tarjeta dentro de la columna
+            xs={12}
+            sm={6}
+            md={4}
+            lg={3}
+            className="d-flex justify-content-center"
           >
-            <Card className={`text-center ${styles.teamCard}`}> 
-              <div className={styles.cardImageContainer}> 
-                <Image src={member.image} roundedCircle className={styles.teamMemberImage} /> 
+            <Card className={`text-center ${styles.teamCard}`}>
+              <div className={styles.cardImageContainer}>
+                <Image
+                  src={member.image}
+                  roundedCircle
+                  className={styles.teamMemberImage}
+                />
               </div>
               <Card.Body>
                 <Card.Title>{member.name}</Card.Title>
@@ -62,4 +65,4 @@ const TeamMembers = () => {
   );
 };
 
-export default TeamMembers; 
+export default TeamMembers;
