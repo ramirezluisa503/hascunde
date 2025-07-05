@@ -1,3 +1,5 @@
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Layout } from '../../Layout/Layout';
 import styles from '../AboutUs/AboutUs.module.css';
 import TeamMembers from '../../TeamMembers/TeamMembers';
@@ -7,55 +9,44 @@ import Autoconfianza from '../../../assets/images/AutoconfianzaAboutUs.webp';
 import { GreenButton } from '../../GreenButton/GreenButton';
 
 export const AboutUs = () => {
+  // 1. Obtén la función 't' para traducir
+  const { t } = useTranslation();
+
   return (
     <Layout>
       <article className={styles.mainContainer}>
         <section className={styles.frontPage}>
           <div className={styles.overlayBlur}></div>
           <div className={styles.frontContain}>
-            <h1 className={styles.frontTitle}>
-              Desafíos del Hombre Líder Moderno
-            </h1>
-            <p className={styles.frontText}>
-              Vivimos en un contexto de evolución tecnológica constante que nos
-              plantea retos para nuestro desarrollo personal y profesional
-            </p>
-            <button className={styles.frontButton}>Aprender Más</button>
+            <h1 className={styles.frontTitle}>{t('au_front_title')}</h1>
+            <p className={styles.frontText}>{t('au_front_text')}</p>
+            <button className={styles.frontButton}>
+              {t('au_learn_more_button')}
+            </button>
           </div>
         </section>
 
         <Container className={`${styles.aboutUsContainer2} px-3 px-md-4`}>
           <Row className="align-items-center gy-4 gy-lg-0">
             <Col xs={12} className={`${styles.textColum} order-2 order-lg-1`}>
-              <h2 className={styles.hascundeTitle}>¿ Por qué HASCUNDE?</h2>
+              <h2 className={styles.hascundeTitle}>
+                {t('au_why_hascunde_title')}
+              </h2>
               <p className={styles.paragraph}>
-                El nombre 'Hascunde' proviene del euskera 'Hazkunde', que
-                significa 'crecimiento' o 'desarrollo'. Este concepto es
-                esencial para la misión de la empresa, que busca fomentar el
-                crecimiento personal y profesional en hombres que desean una
-                vida equilibrada y significativa.
+                {t('au_hascunde_paragraph_part1')}
               </p>
               <p className={styles.paragraph}>
-                Las raíces vascas y gallegas de la cultura paisa aportan una
-                herencia rica en tradiciones de trabajo duro, comunidad y
-                resiliencia. Estas influencias se reflejan en el carácter de los
-                líderes modernos que buscan equilibrio y fortaleza en su vida
-                personal y profesional.
+                {t('au_hascunde_paragraph_part2')}
               </p>
               <p className={styles.paragraph}>
-                En esencia, Hascunde representa el descubrimiento de nuestro
-                máximo potencial: un proceso para liberarnos de las limitaciones
-                y abrazar la auténtica libertad. Se trata de cultivar la
-                disciplina, la consciencia y la resiliencia necesarias para
-                afrontar las complejidades de la vida con gracia y propósito, lo
-                que nos lleva a una existencia equilibrada y plena.
+                {t('au_hascunde_paragraph_part3')}
               </p>
               <div className="mt-3 mt-md-4">
                 <Button
                   variant="secondary"
                   className={`${styles.hascundeButton} w-100 w-sm-auto`}
                 >
-                  Explora Nuestros Valores Fundamentales
+                  {t('au_explore_values_button')}
                 </Button>
               </div>
             </Col>
@@ -67,7 +58,7 @@ export const AboutUs = () => {
             >
               <img
                 src={Cafeteros}
-                alt="Cafeteros cosechando"
+                alt={t('au_coffe_growers_alt')}
                 className={`${styles.hascundeImage} img-fluid`}
                 style={{ maxWidth: '100%', height: 'auto' }}
               />
@@ -80,14 +71,10 @@ export const AboutUs = () => {
           <Row className="align-items-center gy-4 gy-lg-0">
             <Col xs={12} lg={6} className="order-2 order-lg-1">
               <h2 className={styles.powerTitle}>
-                El Poder del Autoconocimiento
+                {t('au_power_of_self_knowledge_title')}
               </h2>
               <p className={styles.textColum}>
-                El autoconocimiento se refiere a la comprensión profunda de uno
-                mismo, incluyendo emociones, motivaciones, valores y
-                comportamientos. Esta capacidad de reflexión permite a las
-                personas evaluar sus habilidades y limitaciones, facilitando el
-                crecimiento personal y profesional.
+                {t('au_power_of_self_knowledge_text')}
               </p>
             </Col>
             <Col
@@ -97,7 +84,7 @@ export const AboutUs = () => {
             >
               <img
                 src={Autoconfianza}
-                alt="Imagen Autoconfianza"
+                alt={t('au_self_confidence_image_alt')}
                 className={`${styles.powerImage} img-fluid`}
                 style={{ maxWidth: '100%', height: 'auto' }}
               />
@@ -113,12 +100,10 @@ export const AboutUs = () => {
               <Card className={`${styles.cards} h-100 shadow-sm`}>
                 <Card.Body className="d-flex flex-column">
                   <Card.Title className={`${styles.cardsH3} mb-3`}>
-                    Evaluación de Fortalezas CliftonStrenght
+                    {t('au_clifton_strength_title')}
                   </Card.Title>
                   <Card.Text className={`${styles.cardsP} flex-grow-1`}>
-                    Tus informes y guías personalizados de CliftonStrengths te
-                    brindarán un momento revelador a medida que experimentas
-                    nuevas formas de comprender lo que te hace tan único.
+                    {t('au_clifton_strength_text')}
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -129,13 +114,10 @@ export const AboutUs = () => {
               <Card className={`${styles.cards} h-100 shadow-sm`}>
                 <Card.Body className="d-flex flex-column">
                   <Card.Title className={`${styles.cardsH3} mb-3`}>
-                    Gestor de conocimiento
+                    {t('au_knowledge_manager_title')}
                   </Card.Title>
                   <Card.Text className={`${styles.cardsP} flex-grow-1`}>
-                    Cómo organizar nuestras ideas, pensamiento y notas? Entrarás
-                    a un nuevo concepto de Cerebro Digital, para que puedas
-                    capturar, procesar, aprender y compartir información, para
-                    que lo conviertas en tu legado
+                    {t('au_knowledge_manager_text')}
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -146,13 +128,10 @@ export const AboutUs = () => {
               <Card className={`${styles.cards} h-100 shadow-sm`}>
                 <Card.Body className="d-flex flex-column">
                   <Card.Title className={`${styles.cardsH3} mb-3`}>
-                    Poder Físico
+                    {t('au_physical_power_title')}
                   </Card.Title>
                   <Card.Text className={`${styles.cardsP} flex-grow-1`}>
-                    Libertad de movimiento para disfrutar de la vida plenamente,
-                    conectando la mente con el cuerpo, aprendiéndolo a dominar
-                    en aspectos como fuerza, movilidad, flexibilidad,
-                    estabilidad, potencia, velocidad y resistencia.
+                    {t('au_physical_power_text')}
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -163,13 +142,10 @@ export const AboutUs = () => {
               <Card className={`${styles.cards} h-100 shadow-sm`}>
                 <Card.Body className="d-flex flex-column">
                   <Card.Title className={`${styles.cardsH3} mb-3`}>
-                    Cosmovisión y Espiritualidad
+                    {t('au_cosmovision_spirituality_title')}
                   </Card.Title>
                   <Card.Text className={`${styles.cardsP} flex-grow-1`}>
-                    Compartiremos las distintas cosmovisiones y te mostraremos
-                    algunas de las guías y pensamientos de grandes hombres de la
-                    historia, que te ayudaran a transitar el camino del
-                    autoconocimiento e individuación necesario para crecer.
+                    {t('au_cosmovision_spirituality_text')}
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -181,13 +157,14 @@ export const AboutUs = () => {
         <Container className="px-3 px-md-4">
           <Row>
             <Col xs={12} className="text-center mt-md-5">
-              <h2 className={styles.guidingVoicesTitle}>Voces Guía</h2>
+              <h2 className={styles.guidingVoicesTitle}>
+                {t('au_guiding_voices_title')}
+              </h2>
               <p
                 className={`${styles.guidingVoicesDescription} mx-auto`}
                 style={{ maxWidth: '600px' }}
               >
-                Conoce a las personas dedicadas que impulsan la visión de
-                Hascunde
+                {t('au_guiding_voices_description')}
               </p>
             </Col>
           </Row>
@@ -200,17 +177,16 @@ export const AboutUs = () => {
           <Row>
             <Col xs={12} className="text-center py-4 py-md-5">
               <h3 className={`${styles.legacyTitle} mb-3 mb-md-4`}>
-                Quieres dejar un Legado?
+                {t('au_want_to_leave_legacy_title')}
               </h3>
               <p
                 className={`${styles.legacyText} mx-auto mb-4`}
                 style={{ maxWidth: '700px' }}
               >
-                Hascunde es más que un programa; es un compromiso de por vida
-                con el crecimiento. Únete a una hermandad de hombres que forjan
-                caminos más sólidos.
+                {t('au_want_to_leave_legacy_text')}
               </p>
-              <GreenButton text={'Connect With Us Today'} />
+              <GreenButton text={t('cu_connect_with_us_button')} />{' '}
+              {/* Usé la clave de contacto general que tienes */}
             </Col>
           </Row>
         </Container>
