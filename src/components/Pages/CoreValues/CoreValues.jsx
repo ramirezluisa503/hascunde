@@ -78,7 +78,6 @@ export const CoreValues = () => {
               <GreenButton text={t('cv_connect_with_us_button')} />
             </div>
           </section>
-          </Col>
         </Row>
       </Container>
     </Layout>
