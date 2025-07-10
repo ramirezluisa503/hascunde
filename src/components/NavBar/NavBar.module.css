@@ -8,6 +8,20 @@
   background-color: #fff;
 }
 
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.switchMobile {
+  display: none; /* Oculto por defecto en desktop */
+}
+
+.switchDesktop {
+  display: block; /* Visible por defecto en desktop */
+}
+
 .hamburger {
   display: none; /* Oculto por defecto en escritorio */
   flex-direction: column;
@@ -62,9 +76,23 @@
     justify-content: space-between;
   }
 
+  .rightSection {
+    margin-right: 1rem;
+    width: 12rem;
+    display: flex;
+  }
+
+  .switchMobile {
+    display: block; /* Visible en mobile */
+    height: 2rem;
+  }
+
+  .switchDesktop {
+    display: none; /* Oculto en mobile */
+  }
+
   .hamburger {
     display: flex;
-    margin-right: 1rem;
   }
 
   .containerLinks {

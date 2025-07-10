@@ -18,10 +18,17 @@ export const NavBar = () => {
     <article className={styles.container}>
       <Logo />
 
-      <div className={styles.hamburger} onClick={toggleMenu}>
-        <div className={styles.bar}></div>
-        <div className={styles.bar}></div>
-        <div className={styles.bar}></div>
+      {/* Contenedor para SwitchButton y hamburger en responsive */}
+      <div className={styles.rightSection}>
+        <div className={styles.switchMobile}>
+          <SwitchButton />
+        </div>
+
+        <div className={styles.hamburger} onClick={toggleMenu}>
+          <div className={styles.bar}></div>
+          <div className={styles.bar}></div>
+          <div className={styles.bar}></div>
+        </div>
       </div>
 
       <nav className={`${styles.containerLinks} ${isOpen ? styles.open : ''}`}>
@@ -71,7 +78,10 @@ export const NavBar = () => {
           {t('nav_contact_us')}
         </NavLink>
 
-        <SwitchButton />
+        {/* SwitchButton en el menú desplegable para desktop */}
+        <div className={styles.switchDesktop}>
+          <SwitchButton />
+        </div>
       </nav>
     </article>
   );
