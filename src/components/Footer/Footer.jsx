@@ -12,12 +12,10 @@ export const Footer = () => {
   const { t, i18n } = useTranslation();
 
   // 2. Función para alternar el idioma entre español e inglés
-  const toggleLanguage = () => {
-    // Si el idioma actual es 'es' (español), cámbialo a 'en' (inglés)
-    // De lo contrario, cámbialo a 'es'
-    const newLang = i18n.language === 'es' ? 'en' : 'es';
-    i18n.changeLanguage(newLang); // Esto actualiza el idioma global de la aplicación
-  };
+  // const toggleLanguage = () => {
+  //   const newLang = i18n.language === 'es' ? 'en' : 'es';
+  //   i18n.changeLanguage(newLang);
+  // };
 
   return (
     <article className={styles.footer}>
@@ -37,9 +35,9 @@ export const Footer = () => {
       </section>
 
       <section className={styles.footerBottom}>
-        <button className={styles.languageSelector} onClick={toggleLanguage}>
+        {/* <button className={styles.languageSelector} onClick={toggleLanguage}>
           {t('language_button_text')}
-        </button>
+        </button> */}
         <p className={styles.copyright}>{t('copyright_text')}</p>{' '}
         <div className={styles.socialMedia}>
           <a href="#" aria-label="twitter">

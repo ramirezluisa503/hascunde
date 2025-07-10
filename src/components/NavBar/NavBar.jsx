@@ -4,6 +4,7 @@ import styles from './NavBar.module.css';
 import { Logo } from '../Logo/Logo';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
+import { SwitchButton } from '../SwitchButton/SwitchButton';
 
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -69,6 +70,8 @@ export const NavBar = () => {
         >
           {t('nav_contact_us')}
         </NavLink>
+
+        <SwitchButton />
       </nav>
     </article>
   );

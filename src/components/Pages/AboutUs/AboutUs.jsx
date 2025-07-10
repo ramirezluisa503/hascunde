@@ -42,20 +42,12 @@ export const AboutUs = () => {
                 {t('au_hascunde_paragraph_part3')}
               </p>
               <div className="mt-3 mt-md-4">
-                <Button
-                  variant="secondary"
-                  className={styles.hascundeButton}
-                >
+                <Button variant="secondary" className={styles.hascundeButton}>
                   {t('au_explore_values_button')}
                 </Button>
               </div>
             </Col>
-            <Col
-              xs={12}
-              lg={6}
-              xl={5}
-              className={styles.imageColum}
-            >
+            <Col xs={12} lg={6} xl={5} className={styles.imageColum}>
               <img
                 src={Cafeteros}
                 alt={t('au_coffe_growers_alt')}
