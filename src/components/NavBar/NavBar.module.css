@@ -20,6 +20,8 @@
 
 .switchDesktop {
   display: block; /* Visible por defecto en desktop */
+  align-items: right;
+  margin-right: 1rem;
 }
 
 .hamburger {
@@ -45,7 +47,6 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
   gap: 1.5rem;
 }
 

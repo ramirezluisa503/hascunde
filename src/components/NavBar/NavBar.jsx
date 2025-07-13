@@ -79,10 +79,11 @@ export const NavBar = () => {
         </NavLink>
 
         {/* SwitchButton en el menú desplegable para desktop */}
-        <div className={styles.switchDesktop}>
-          <SwitchButton />
-        </div>
+        
       </nav>
+      <div className={styles.switchDesktop}>
+          <SwitchButton />
+      </div>
     </article>
   );
 };
