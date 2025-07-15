@@ -27,8 +27,8 @@ export const AboutUs = () => {
         </section>
 
         <Container className={`${styles.aboutUsContainer2} px-3 px-md-4`}>
-          <Row className="align-items-center gy-4 gy-lg-0">
-            <Col xs={12} className={`${styles.textColum} order-2 order-lg-1`}>
+          <Row className="align-items-center justify-content-center gy-4 gy-lg-0">
+            <Col xs={12} md={6} className={styles.textColum}>
               <h2 className={styles.hascundeTitle}>
                 {t('au_why_hascunde_title')}
               </h2>
@@ -42,20 +42,12 @@ export const AboutUs = () => {
                 {t('au_hascunde_paragraph_part3')}
               </p>
               <div className="mt-3 mt-md-4">
-                <Button
-                  variant="secondary"
-                  className={`${styles.hascundeButton} w-100 w-sm-auto`}
-                >
+                <Button variant="secondary" className={styles.hascundeButton}>
                   {t('au_explore_values_button')}
                 </Button>
               </div>
             </Col>
-            <Col
-              xs={12}
-              lg={6}
-              xl={5}
-              className={`${styles.imageColum} order-1 order-lg-2 text-center`}
-            >
+            <Col xs={12} lg={6} xl={5} className={styles.imageColum}>
               <img
                 src={Cafeteros}
                 alt={t('au_coffe_growers_alt')}

@@ -4,6 +4,7 @@ import styles from './NavBar.module.css';
 import { Logo } from '../Logo/Logo';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
+import { SwitchButton } from '../SwitchButton/SwitchButton';
 
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,10 +18,17 @@ export const NavBar = () => {
     <article className={styles.container}>
       <Logo />
 
-      <div className={styles.hamburger} onClick={toggleMenu}>
-        <div className={styles.bar}></div>
-        <div className={styles.bar}></div>
-        <div className={styles.bar}></div>
+      {/* Contenedor para SwitchButton y hamburger en responsive */}
+      <div className={styles.rightSection}>
+        <div className={styles.switchMobile}>
+          <SwitchButton />
+        </div>
+
+        <div className={styles.hamburger} onClick={toggleMenu}>
+          <div className={styles.bar}></div>
+          <div className={styles.bar}></div>
+          <div className={styles.bar}></div>
+        </div>
       </div>
 
       <nav className={`${styles.containerLinks} ${isOpen ? styles.open : ''}`}>
@@ -69,7 +77,13 @@ export const NavBar = () => {
         >
           {t('nav_contact_us')}
         </NavLink>
+
+        {/* SwitchButton en el menú desplegable para desktop */}
+        
       </nav>
+      <div className={styles.switchDesktop}>
+          <SwitchButton />
+      </div>
     </article>
   );
 };

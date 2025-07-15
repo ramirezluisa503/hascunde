@@ -15,12 +15,16 @@ export const CoreValues = () => {
 
   return (
     <Layout>
+      
       <section className={styles.frontPage}>
+        
+
         <div className={styles.overlayBlur}></div>
         <div className={styles.frontContain}>
           <h1 className={styles.frontTitle}>{t('cv_hero_title')}</h1>
           <p className={styles.frontText}>{t('cv_hero_text')}</p>
         </div>
+
       </section>
 
       <Container>

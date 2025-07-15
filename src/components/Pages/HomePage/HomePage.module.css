@@ -147,10 +147,6 @@
   margin-bottom: 1rem;
 }
 
-.frontTitle {
-  font-size: 2rem;
-}
-
 @media (max-width: 768px) {
   .frontPage {
     height: 30rem;
