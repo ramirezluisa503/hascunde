@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next'; // Importamos useTranslation
 import styles from './NavBar.module.css';
 import { Logo } from '../Logo/Logo';
@@ -24,7 +23,10 @@ export const NavBar = () => {
           <SwitchButton />
         </div>
 
-        <div className={styles.hamburger} onClick={toggleMenu}>
+        <div
+          className={styles.hamburger}
+          onClick={toggleMenu}
+        >
           <div className={styles.bar}></div>
           <div className={styles.bar}></div>
           <div className={styles.bar}></div>
@@ -79,10 +81,9 @@ export const NavBar = () => {
         </NavLink>
 
         {/* SwitchButton en el menú desplegable para desktop */}
-        
       </nav>
       <div className={styles.switchDesktop}>
-          <SwitchButton />
+        <SwitchButton />
       </div>
     </article>
   );

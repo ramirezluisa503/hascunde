@@ -1,4 +1,3 @@
-
 .title {
   font-size: 3rem;
   font-weight: 600;
@@ -14,97 +13,94 @@
   text-align: center;
   padding: auto;
 }
-.containerHowHelpYou{
-    max-width:80%;
-    margin-bottom: 3rem;
-    margin-top: 5rem;
+.containerHowHelpYou {
+  max-width: 80%;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-     border-radius: 10px;
-     padding: 1.5rem;
-     background-color: #fff;
-     box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.08);
-     margin-bottom: 5rem;
-     height: 300px;
-     width: 100%;
-     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
-     
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 10px;
+  padding: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.08);
+  margin-bottom: 5rem;
+  height: 300px;
+  width: 100%;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 .card:hover {
-    /* Nuevos estilos cuando el mouse está sobre la tarjeta */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombra más grande y/o oscura */
-    transform: translateY(-5px); /* Opcional: Levanta ligeramente la tarjeta */
+  /* Nuevos estilos cuando el mouse está sobre la tarjeta */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombra más grande y/o oscura */
+  transform: translateY(-5px); /* Opcional: Levanta ligeramente la tarjeta */
 }
 
-
-.cardText{
-    color: #8c8d8b; /* Color de texto gris suave (equivalente a 'text-muted') */
-    line-height: 1.5; 
-    font-size: 0.95rem; 
-    text-align: left;
-    margin-bottom: 0;
+.cardText {
+  color: #8c8d8b; /* Color de texto gris suave (equivalente a 'text-muted') */
+  line-height: 1.5;
+  font-size: 0.95rem;
+  text-align: left;
+  margin-bottom: 0;
 }
 .cardTitle {
-    font-weight: bold; 
-    color: #242524; 
-    margin-bottom: 0.5rem;
-    font-size: 1.25rem; 
+  font-weight: bold;
+  color: #242524;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
 }
 .iconWrapper {
-    margin-bottom: 1rem; 
-    font-size: 8rem; 
-    display: flex; 
-    justify-content: center; /* Centra el ícono horizontalmente */
-    align-items: center; /* Centra el ícono verticalmente */
-    /* Circulo detras del icono */
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;  
+  margin-bottom: 1rem;
+  font-size: 8rem;
+  display: flex;
+  justify-content: center; /* Centra el ícono horizontalmente */
+  align-items: center; /* Centra el ícono verticalmente */
+  /* Circulo detras del icono */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
-.imgIcono{
-    width:56px ;
-    height:56px;
+.imgIcono {
+  width: 56px;
+  height: 56px;
 }
 
-.buttonCards{
-  padding: 0.7rem 1.5rem; 
+.buttonCards {
+  padding: 0.7rem 1.5rem;
   font-size: 1.1rem;
   font-weight: 600;
   border-radius: 8px;
-  background-color:#ffffff;
+  background-color: #ffffff;
   border-color: #7c9e85;
   border-width: 1px;
   border-style: solid;
-  color:#7c9e85;
+  color: #7c9e85;
   width: auto;
   height: auto;
   opacity: 1;
-  display: inline-block; 
+  display: inline-block;
   text-decoration: none;
   text-align: center;
-  
 }
 
-.Row.g-4 { /* Si tu Row tiene la clase g-4 (gap) */
+.Row.g-4 {
+  /* Si tu Row tiene la clase g-4 (gap) */
   align-items: stretch; /* Esto hace que las columnas dentro de la fila se estiren para tener la misma altura */
 }
 
-.containerButton{
-    text-align: left;
-    margin-top: auto;
-    align-self: flex-start;
-    display: inline-block;
+.containerButton {
+  text-align: left;
+  margin-top: auto;
+  align-self: flex-start;
+  display: inline-block;
 }
-
 
 .frontPage {
   width: 100%;
   height: 38rem;
-  background-image: url('../../../assets/images/coreValues.webp');
+  background-image: url('../../../assets/images/cat.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -169,7 +165,7 @@
 .catContainer {
   max-width: 100%;
   height: 30rem;
-  background-image: url('../../../assets/images/cat.webp');
+  background-image: url('../../../assets/images/coreValues.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

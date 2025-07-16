@@ -5,7 +5,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: #fff;
+  background-color: #f9f2e0;
 }
 
 .rightSection {
@@ -52,7 +52,7 @@
 
 .textNav {
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   color: black;
@@ -60,7 +60,7 @@
 
 .textNavSel {
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #7c9e85;
   cursor: pointer;
@@ -121,7 +121,7 @@
   .textNav,
   .textNavSel {
     text-align: center;
-    padding: 0.5rem 0.2rem;
     border-bottom: none;
+    font-size: 1.2rem;
   }
 }
