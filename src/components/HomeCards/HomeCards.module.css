@@ -19,7 +19,7 @@
 .iconCircle {
   width: 60px;
   height: 60px;
-  background-color: #f0f8f0; /* Fondo muy claro, casi blanco verdoso */
+  background-color: #f2f5f3; /* Fondo muy claro, casi blanco verdoso */
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -27,7 +27,10 @@
   margin: 0 auto 1rem auto; /* Centra el círculo y añade margen inferior */
   font-size: 2.2rem; /* Tamaño del icono dentro del círculo */
   color: #7c9e85; /* Color del icono */
-  border: 1px solid #7c9e85; /* Borde del círculo con el color verde */
+}
+
+.iconSize {
+  width: 2rem;
 }
 
 /* Título de la tarjeta */
