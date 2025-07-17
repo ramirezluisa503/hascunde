@@ -1,7 +1,6 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next'; // ¡Asegúrate de que esta línea esté presente!
+import { useTranslation } from 'react-i18next';
 import { Layout } from '../../Layout/Layout';
-import { Row, Col, Container, Button, Card } from 'react-bootstrap';
+import { Row, Container } from 'react-bootstrap';
 import styles from './CoreValues.module.css';
 import { GreenButton } from '../../GreenButton/GreenButton';
 import { CoreValuesCard } from '../../CoreValuesCard/CoreValuesCard';
@@ -17,8 +16,12 @@ export const CoreValues = () => {
     <Layout>
       <section className={styles.frontPage}>
         <div className={styles.frontContain}>
-          <h1 className={styles.frontTitle}>{t('cv_hero_title')}</h1>
-          <p className={styles.frontText}>{t('cv_hero_text')}</p>
+          <h1 className={styles.frontTitle}>
+            {t('cv_discover_sacred_animal_title')}
+          </h1>
+          <p className={styles.frontText}>
+            {t('cv_discover_sacred_animal_text')}
+          </p>
         </div>
       </section>
 
@@ -65,12 +68,8 @@ export const CoreValues = () => {
           <section>
             <div className={styles.overlayBlur}></div>
             <div className={styles.frontContain}>
-              <h1 className={styles.frontTitle}>
-                {t('cv_discover_sacred_animal_title')}
-              </h1>
-              <p className={styles.frontText}>
-                {t('cv_discover_sacred_animal_text')}
-              </p>
+              <h1 className={styles.frontTitle}>{t('cv_hero_title')}</h1>
+              <p className={styles.frontText}>{t('cv_hero_text')}</p>
               <GreenButton text={t('cv_connect_with_us_button')} />
             </div>
           </section>
