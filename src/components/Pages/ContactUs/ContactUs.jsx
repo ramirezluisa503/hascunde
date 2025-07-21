@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Layout } from '../../Layout/Layout';
 import styles from './ContactUs.module.css';
@@ -102,12 +101,18 @@ export const ContactUs = () => {
         <Container>
           <Row className={styles.contactContain}>
             {/* Contact Form */}
-            <Col lg={6} className={styles.contactColumn}>
+            <Col
+              lg={6}
+              className={styles.contactColumn}
+            >
               <h2 className={styles.sectionTitle}>
                 {t('cu_contact_form_title')}
               </h2>
 
-              <Form className={styles.contactForm} onSubmit={handleSubmit}>
+              <Form
+                className={styles.contactForm}
+                onSubmit={handleSubmit}
+              >
                 <Form.Group className={styles.formGroup}>
                   <Form.Label className={styles.formLabel}>
                     {t('cu_form_name_label')}
@@ -159,10 +164,16 @@ export const ContactUs = () => {
             </Col>
 
             {/* FAQ Section */}
-            <Col lg={6} className={styles.faqColumn}>
+            <Col
+              lg={6}
+              className={styles.faqColumn}
+            >
               <h2 className={styles.sectionTitle}>{t('cu_faq_title')}</h2>
 
-              <Accordion defaultActiveKey="0" className={styles.faqAccordion}>
+              <Accordion
+                defaultActiveKey="0"
+                className={styles.faqAccordion}
+              >
                 {faqData.map((faq, index) => (
                   <Accordion.Item
                     eventKey={index.toString()}

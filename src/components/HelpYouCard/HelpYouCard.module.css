@@ -7,6 +7,8 @@
 .starContain {
   display: flex;
   align-items: baseline;
+  text-decoration: none;
+  color: black;
 }
 
 .starTitle {

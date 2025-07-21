@@ -37,28 +37,36 @@ export const CoreValues = () => {
             title={t('cv_focus_time_management_title')}
             text={t('cv_focus_time_management_text')}
             image={user}
-            imageAlt={t('cv_icon_users_alt')} // Añadida la prop imageAlt
+            imageAlt={t('cv_icon_users_alt')}
+            textButton={t('au_learn_more_button')}
+            redirect={'/contactUs'}
           />
 
           <CoreValuesCard
             title={t('cv_coaching_title')}
             text={t('cv_coaching_text')}
             image={corazon}
-            imageAlt={t('cv_icon_heart_alt')} // Añadida la prop imageAlt
+            imageAlt={t('cv_icon_heart_alt')}
+            textButton={t('au_learn_more_button')}
+            redirect={'/contactUs'}
           />
 
           <CoreValuesCard
             title={t('cv_consulting_title')}
             text={t('cv_consulting_text')}
             image={hoja}
-            imageAlt={t('cv_icon_leaf_alt')} // Añadida la prop imageAlt
+            imageAlt={t('cv_icon_leaf_alt')}
+            textButton={t('au_learn_more_button')}
+            redirect={'/contactUs'}
           />
 
           <CoreValuesCard
             title={t('cv_digital_transformation_title')}
             text={t('cv_digital_transformation_text')}
             image={cerebro}
-            imageAlt={t('cv_icon_brain_big_alt')} // Añadida la prop imageAlt
+            imageAlt={t('cv_icon_brain_big_alt')}
+            textButton={t('au_learn_more_button')}
+            redirect={'/contactUs'}
           />
         </Row>
       </Container>
@@ -70,7 +78,10 @@ export const CoreValues = () => {
             <div className={styles.frontContain}>
               <h1 className={styles.frontTitle}>{t('cv_hero_title')}</h1>
               <p className={styles.frontText}>{t('cv_hero_text')}</p>
-              <GreenButton text={t('cv_connect_with_us_button')} />
+              <GreenButton
+                text={t('cv_connect_with_us_button')}
+                redirect={'/contactUs'}
+              />
             </div>
           </section>
         </Row>

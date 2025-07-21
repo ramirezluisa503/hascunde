@@ -21,7 +21,10 @@ export const HomePage = () => {
         <div className={styles.frontContain}>
           <h1 className={styles.frontTitle}>{t('hp_front_title')}</h1>
           <p className={styles.frontText}>{t('hp_front_text')}</p>
-          <GreenButton text={t('hp_start_journey_button')} />{' '}
+          <GreenButton
+            text={t('hp_start_journey_button')}
+            redirect={'/contactUs'}
+          />
         </div>
       </section>
 
@@ -158,7 +161,10 @@ export const HomePage = () => {
               <h4 className={`${styles.starText} mt-3 mb-3`}>
                 {t('hp_tibetan_image_caption')}{' '}
               </h4>
-              <GreenButton text={t('hp_discover_programs_button')} />{' '}
+              <GreenButton
+                text={t('hp_discover_programs_button')}
+                redirect={'/OurMission'}
+              />{' '}
             </div>
           </Col>
         </Row>
@@ -175,7 +181,10 @@ export const HomePage = () => {
             <h2 className={`${styles.brownTitle} mb-3 mb-md-4`}>
               {t('hp_ready_to_forge_path_title')}{' '}
             </h2>
-            <GreenButton text={t('hp_contact_us_today_button')} />{' '}
+            <GreenButton
+              text={t('hp_contact_us_today_button')}
+              redirect={'/ContactUs'}
+            />{' '}
           </Col>
         </Row>
       </Container>
