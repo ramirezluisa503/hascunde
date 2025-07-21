@@ -1,7 +1,6 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next'; // Importa useTranslation
 import { Layout } from '../../Layout/Layout';
-import { Row, Col, Container, Card, Button, Image } from 'react-bootstrap';
+import { Row, Col, Container, Card, Image } from 'react-bootstrap';
 import styles from '../OurMission/OurMission.module.css';
 import FormulaExo from '../../../assets/images/FormulaEXO.webp';
 import Chris from '../../../assets/images/Chris.webp';
@@ -12,6 +11,7 @@ import iconoStar from '../../../assets/images/iconoStar.webp';
 import iconoCalendar from '../../../assets/images/iconoCalendar.webp';
 import iconoFlag from '../../../assets/images/iconoFlag.webp';
 import iconoHands from '../../../assets/images/iconoHands.webp';
+import { GreenButton } from '../../GreenButton/GreenButton';
 
 export const OurMission = () => {
   const { t, i18n } = useTranslation(); // Obtén la función 't' y el objeto 'i18n' para el idioma actual
@@ -162,23 +162,31 @@ export const OurMission = () => {
   return (
     <Layout>
       {/* Sección Hero */}
-      <Container fluid className={styles.container1}>
+      <Container
+        fluid
+        className={styles.container1}
+      >
         <Row className={`${styles.row1} align-items-center`}>
-          <Col xs={12} lg={6} className={`${styles.contentCol}`}>
+          <Col
+            xs={12}
+            lg={6}
+            className={`${styles.contentCol}`}
+          >
             <h1 className={styles.title}>{t('om_hero_title')}</h1>
             <p className={styles.description}>{t('om_hero_description')}</p>
 
             <div className="d-grid d-sm-block">
-              <Button
-                variant="secondary"
-                className={styles.OurMissionButton}
-                size="lg"
-              >
-                {t('om_discover_impact_button')}
-              </Button>
+              <GreenButton
+                text={t('om_discover_impact_button')}
+                redirect={'/contactUs'}
+              />
             </div>
           </Col>
-          <Col xs={12} lg={6} className="order-1 order-lg-2 text-center">
+          <Col
+            xs={12}
+            lg={6}
+            className="order-1 order-lg-2 text-center"
+          >
             <img
               src={FormulaExo}
               alt={t('om_hero_image_alt')}
@@ -193,7 +201,10 @@ export const OurMission = () => {
         <Row>
           <Container className="my-5">
             <Row>
-              <Col xs={12} className="text-center mb-4">
+              <Col
+                xs={12}
+                className="text-center mb-4"
+              >
                 <h3 className={styles.titleUpCard}>
                   {t('om_support_structure_title')}
                 </h3>
@@ -202,7 +213,13 @@ export const OurMission = () => {
 
             <Row className="g-3 g-md-4 justify-content-center">
               {supportStructureItems.map((item, index) => (
-                <Col key={index} xs={12} sm={6} lg={4} xl={4}>
+                <Col
+                  key={index}
+                  xs={12}
+                  sm={6}
+                  lg={4}
+                  xl={4}
+                >
                   <Card className={`${styles.card} h-100`}>
                     <div className={styles.iconWrapper}>{item.icon}</div>
                     <Card.Title className={styles.cardTitle}>
@@ -222,7 +239,10 @@ export const OurMission = () => {
       {/* Sección de Testimonios */}
       <Container>
         <Row>
-          <Col xs={12} className="text-center mb-4">
+          <Col
+            xs={12}
+            className="text-center mb-4"
+          >
             <h2 className={styles.titleCards}>
               {t('om_transforming_lives_title')}
             </h2>
@@ -231,7 +251,13 @@ export const OurMission = () => {
 
         <Row className={`${styles.containerCards} g-3 g-md-4`}>
           {testimonials.map((testimonial, index) => (
-            <Col key={index} xs={12} md={6} xl={4} className="mb-4">
+            <Col
+              key={index}
+              xs={12}
+              md={6}
+              xl={4}
+              className="mb-4"
+            >
               <Card className={`${styles.cardTestimony} h-100`}>
                 <Card.Body className="d-flex flex-column">
                   <Card.Text className={`${styles.textCustomers} flex-grow-1`}>
@@ -269,7 +295,10 @@ export const OurMission = () => {
       <div className={styles.leadershipTransformationSection}>
         <Container>
           <Row>
-            <Col xs={12} className="text-center mb-4">
+            <Col
+              xs={12}
+              className="text-center mb-4"
+            >
               <h2 className={styles.titleCards1}>
                 {t('om_path_to_leadership_transformation_title')}
               </h2>
@@ -278,7 +307,13 @@ export const OurMission = () => {
 
           <Row className="justify-content-center g-3 g-md-4">
             {transformationPath.map((step, index) => (
-              <Col key={index} xs={12} sm={6} lg={3} className="mb-4">
+              <Col
+                key={index}
+                xs={12}
+                sm={6}
+                lg={3}
+                className="mb-4"
+              >
                 <Card className={`${styles.transformationCard} h-100`}>
                   <Card.Body
                     className={`${styles.cardBodyContent} d-flex flex-column`}
@@ -314,7 +349,12 @@ export const OurMission = () => {
       {/* Sección CTA Final */}
       <Container className={styles.transformationContainer}>
         <Row className="justify-content-center">
-          <Col xs={12} lg={10} xl={8} className="text-center">
+          <Col
+            xs={12}
+            lg={10}
+            xl={8}
+            className="text-center"
+          >
             <h2 className={styles.transformationTitle}>
               {t('om_ready_for_transformation_title')}
             </h2>
@@ -324,13 +364,10 @@ export const OurMission = () => {
             </p>
 
             <div className="d-grid d-sm-block">
-              <Button
-                variant="secondary"
-                className={styles.hascundeButton}
-                size="lg"
-              >
-                {t('om_connect_with_hascunde_button')}
-              </Button>
+              <GreenButton
+                text={t('om_connect_with_hascunde_button')}
+                redirect={'/contactUs'}
+              />
             </div>
           </Col>
         </Row>

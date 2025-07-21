@@ -20,15 +20,21 @@ export const AboutUs = () => {
           <div className={styles.frontContain}>
             <h1 className={styles.frontTitle}>{t('au_front_title')}</h1>
             <p className={styles.frontText}>{t('au_front_text')}</p>
-            <button className={styles.frontButton}>
-              {t('au_learn_more_button')}
-            </button>
+            <GreenButton
+              className={styles.frontButton}
+              text={t('au_learn_more_button')}
+              redirect={'/CoreValues'}
+            />
           </div>
         </section>
 
         <Container className={`${styles.aboutUsContainer2} px-3 px-md-4`}>
           <Row className="align-items-center justify-content-center gy-4 gy-lg-0">
-            <Col xs={12} md={6} className={styles.textColum}>
+            <Col
+              xs={12}
+              md={6}
+              className={styles.textColum}
+            >
               <h2 className={styles.hascundeTitle}>
                 {t('au_why_hascunde_title')}
               </h2>
@@ -42,12 +48,18 @@ export const AboutUs = () => {
                 {t('au_hascunde_paragraph_part3')}
               </p>
               <div className="mt-3 mt-md-4">
-                <Button variant="secondary" className={styles.hascundeButton}>
-                  {t('au_explore_values_button')}
-                </Button>
+                <GreenButton
+                  text={t('au_explore_values_button')}
+                  redirect={'/CoreValues'}
+                />
               </div>
             </Col>
-            <Col xs={12} lg={6} xl={5} className={styles.imageColum}>
+            <Col
+              xs={12}
+              lg={6}
+              xl={5}
+              className={styles.imageColum}
+            >
               <img
                 src={Cafeteros}
                 alt={t('au_coffe_growers_alt')}
@@ -61,7 +73,11 @@ export const AboutUs = () => {
         {/* Sección Poder del Autoconocimiento - Mejorada responsividad */}
         <Container className={`${styles.aboutUsContainer3} px-3 px-md-4`}>
           <Row className="align-items-center gy-4 gy-lg-0">
-            <Col xs={12} lg={6} className="order-2 order-lg-1">
+            <Col
+              xs={12}
+              lg={6}
+              className="order-2 order-lg-1"
+            >
               <h2 className={styles.powerTitle}>
                 {t('au_power_of_self_knowledge_title')}
               </h2>
@@ -88,7 +104,12 @@ export const AboutUs = () => {
         <Container className="my-4 my-md-5 px-3 px-md-4">
           <Row className="g-3 g-md-4">
             {/* Card 1 */}
-            <Col xs={12} sm={6} lg={6} xl={6}>
+            <Col
+              xs={12}
+              sm={6}
+              lg={6}
+              xl={6}
+            >
               <Card className={`${styles.cards} h-100 shadow-sm`}>
                 <Card.Body className="d-flex flex-column">
                   <Card.Title className={`${styles.cardsH3} mb-3`}>
@@ -102,7 +123,12 @@ export const AboutUs = () => {
             </Col>
 
             {/* Card 2 */}
-            <Col xs={12} sm={6} lg={6} xl={6}>
+            <Col
+              xs={12}
+              sm={6}
+              lg={6}
+              xl={6}
+            >
               <Card className={`${styles.cards} h-100 shadow-sm`}>
                 <Card.Body className="d-flex flex-column">
                   <Card.Title className={`${styles.cardsH3} mb-3`}>
@@ -116,7 +142,12 @@ export const AboutUs = () => {
             </Col>
 
             {/* Card 3 */}
-            <Col xs={12} sm={6} lg={6} xl={6}>
+            <Col
+              xs={12}
+              sm={6}
+              lg={6}
+              xl={6}
+            >
               <Card className={`${styles.cards} h-100 shadow-sm`}>
                 <Card.Body className="d-flex flex-column">
                   <Card.Title className={`${styles.cardsH3} mb-3`}>
@@ -130,7 +161,12 @@ export const AboutUs = () => {
             </Col>
 
             {/* Card 4 */}
-            <Col xs={12} sm={6} lg={6} xl={6}>
+            <Col
+              xs={12}
+              sm={6}
+              lg={6}
+              xl={6}
+            >
               <Card className={`${styles.cards} h-100 shadow-sm`}>
                 <Card.Body className="d-flex flex-column">
                   <Card.Title className={`${styles.cardsH3} mb-3`}>
@@ -148,7 +184,10 @@ export const AboutUs = () => {
         {/* Sección Voces Guía - Mejorada */}
         <Container className="px-3 px-md-4">
           <Row>
-            <Col xs={12} className="text-center mt-md-5">
+            <Col
+              xs={12}
+              className="text-center mt-md-5"
+            >
               <h2 className={styles.guidingVoicesTitle}>
                 {t('au_guiding_voices_title')}
               </h2>
@@ -167,7 +206,10 @@ export const AboutUs = () => {
         {/* Sección Legacy - Call to Action final */}
         <Container className={`${styles.legacyContainer} px-3 px-md-4`}>
           <Row>
-            <Col xs={12} className="text-center py-4 py-md-5">
+            <Col
+              xs={12}
+              className="text-center py-4 py-md-5"
+            >
               <h3 className={`${styles.legacyTitle} mb-3 mb-md-4`}>
                 {t('au_want_to_leave_legacy_title')}
               </h3>
@@ -177,7 +219,10 @@ export const AboutUs = () => {
               >
                 {t('au_want_to_leave_legacy_text')}
               </p>
-              <GreenButton text={t('cu_connect_with_us_button')} />{' '}
+              <GreenButton
+                text={t('cu_connect_with_us_button')}
+                redirect={'/ContactUs'}
+              />
               {/* Usé la clave de contacto general que tienes */}
             </Col>
           </Row>
